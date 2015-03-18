@@ -1,9 +1,9 @@
 import numpy as np
 import time
 
-
-RISKFREE = 0.02
-VOLATILITY = 0.30
+timeinitial = time.time()
+RISKFREE = 0.05
+VOLATILITY = 0.35
 
 
 def cnd(d):
@@ -54,19 +54,25 @@ def main (*args):
     iterations = 10
     if len(args) >= 2:
         iterations = int(args[0])
-    
+
     callResult = np.zeros(OPT_N)
     putResult = -np.ones(OPT_N)
-    stockPrice = randfloat(np.random.random(OPT_N), 5.0, 30.0)
-    optionStrike = randfloat(np.random.random(OPT_N), 1.0, 100.0)
-    optionYears = randfloat(np.random.random(OPT_N), 0.25, 10.0)
+    # stockPrice = randfloat(np.random.random(OPT_N), 5.0, 30.0)
+    # optionStrike = randfloat(np.random.random(OPT_N), 1.0, 100.0)
+    # optionYears = randfloat(np.random.random(OPT_N), 0.25, 10.0)
+    stockPrice = np.array([100.0] * OPT_N)
+    optionStrike = np.array([105.0] * OPT_N)
+    optionYears = np.array([10] * OPT_N)
 
     time0 = time.time()
     for i in range(iterations):
         black_scholes(callResult, putResult, stockPrice, optionStrike,
                       optionYears, RISKFREE, VOLATILITY)
     time1 = time.time()
-    print("Time: %f msec" % ((time1 - time0) / iterations * 1000))
+    print("Time of BlackScholes: %f msec" % ((time1 - time0) / iterations * 1000))
+    print("Time of BlackScholes: %f msec" % ((time1 - time0)  * 1000))
+    timefinal = time.time()
+    print("Total Run-Time: %f msec" % ((timefinal - timeinitial)  * 1000))
 
 
 if __name__ == "__main__":
