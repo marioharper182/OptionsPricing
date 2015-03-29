@@ -14,6 +14,7 @@ class EuropeanLookback():
         self.tau = expiry - t
         self.spot = spot
         self.sigma = sigma
+        self.sigma2 = sigma2 = sigma**2
         self.rate = rate
         self.dividend = dividend
         self.alpha = alpha
@@ -22,19 +23,69 @@ class EuropeanLookback():
         self.Vbar = 0
         self.xi = xi = 0
 
-        self.N = 10
-        self.M = 100
+        self.N = N = 1000
+        self.M = M = 5000
+
+        beta1 = -.88
+        beta2 = -.42
+        beta3 = -.0003
+
+        ### Calculate the trivial lookback option
+        newdt = float(expiry)/float(N) # Get the dt for the Weiner process
+        dW = np.sqrt(newdt)*np.random.normal(0,1,(M,N-1)) # Create the brownian motion
+        W = np.cumsum(dW, axis=1) # Set up the Weiner Process as a Matrix
+        time = np.linspace(0, expiry, N) # Set the discrete time space
+        tempA = np.zeros((M,1)) # Create an initial zero vector for the first column
+        Wnew = np.c_[tempA,W] # Append the Weiner matrix to the zeros
+        tt = np.tile(np.array(time),(M,1)) # Create a matrix of time x M so we have time for every iteration
+
+        ### Calculate the lookback option ###
+        assetpath = spot*np.exp((rate-.5*sigma2)*tt+sigma*Wnew) #European standard
+        max_vals = [max(assetpath[i]) for i in range(0 , len(assetpath))]
+        option_val = [max(i-strike,0) for i in np.array(max_vals)]
+        call_val = np.mean(option_val)
+        present_val = np.exp(-rate*expiry)*call_val
+        print(present_val)
 
         self.tau = tau = self.expiry-self.t
 
-        self.Delta = self.EuroDelta()
-        self.Gamma = self.EuroGamma()
-        self.Theta = self.EuroTheta(rate, strike, tau, sigma, spot)
-        self.Rho = self.EuroRho(tau, strike, rate)
-        self.Vega = self.EuroVega(tau, spot)
-
+        self.matrixengine(spot, rate, sigma, expiry, N, M, strike, sigma2)
         self.montecarloengine()
 
+    def matrixengine(self, spot, rate, sigma, expiry, N, M, strike, sigma2):
+        ### Calculate the trivial lookback option
+        newdt = float(expiry)/float(N) # Get the dt for the Weiner process
+        dW = np.sqrt(newdt)*np.random.normal(0,1,(M,N-1)) # Create the brownian motion
+        W = np.cumsum(dW, axis=1) # Set up the Weiner Process as a Matrix
+        time = np.linspace(0, expiry, N) # Set the discrete time space
+        tempA = np.zeros((M,1)) # Create an initial zero vector for the first column
+        Wnew = np.c_[tempA,W] # Append the Weiner matrix to the zeros
+        tt = np.tile(np.array(time),(M,1)) # Create a matrix of time x M so we have time for every iteration
+
+        ### Calculate the lookback option ###
+        assetpath = spot*np.exp((rate-.5*sigma2)*tt+sigma*Wnew) #European standard
+        max_vals = [max(assetpath[i]) for i in range(0 , len(assetpath))]
+        option_val = [max(i-strike,0) for i in np.array(max_vals)]
+        call_val = np.mean(option_val)
+        present_val = np.exp(-rate*expiry)*call_val
+        print(present_val)
+
+        ### Initialize Control Variates ###
+        sig2 = self.sigma**2
+        alphadt = self.alpha*self.dt
+        xisdt = self.xi*np.sqrt(self.dt)
+        erddt = np.exp((self.rate-self.dividend)*self.dt)
+        egam1 = np.exp(2*(self.rate-self.dividend)*self.dt)
+        egam2 = -2*erddt + 1
+        eveg1 = np.exp(-self.alpha*self.dt)
+        eveg2 = self.Vbar - self.Vbar*eveg1
+
+        ### Calculate the general solution to the lookback option (analytic)
+        a1 = 1/(sigma*np.sqrt(expiry-time)) * (np.log(spot/option_val) + (rate+.5*sigma2)*(expiry-time))
+        a2 = 1/(sigma*np.sqrt(expiry-time)) * (np.log(spot/option_val) - (rate+.5*sigma2)*(expiry-time))
+        a3 = 1/(sigma*np.sqrt(expiry-time)) * (np.log(option_val/spot) - (rate+.5*sigma2)*(expiry-time))
+        alpha = (2*rate)/sigma2
+        Analytic_ish = spot*(norm(a1)*(1+1/alpha)-1) + option_val*np.exp(-rate*(expiry-time))*(norm(a3)-1/alpha *(option_val/spot)**(alpha-1) * norm(a2))
 
     def montecarloengine(self):
 
@@ -47,14 +98,11 @@ class EuropeanLookback():
         egam2 = -2*erddt + 1
         eveg1 = np.exp(-self.alpha*self.dt)
         eveg2 = self.Vbar - self.Vbar*eveg1
-        # Initialize the Greeks
 
         sum_CT = 0
         sum_CT2 = 0
 
-        beta1 = -.88
-        beta2 = -.42
-        beta3 = -.0003
+
 
         for j in range(1, self.M):
             St1 = []
@@ -98,37 +146,6 @@ class EuropeanLookback():
                 cv3 = cv3 + vega1*((Vtn-Vt)-(Vt*eveg1+eveg2-Vt)) + \
                       vega2*((Vtn-Vt)-(Vt*eveg1+eveg2-Vt))
 
-    # def EuroDelta(self):
-    #     Delta = norm.cdf(self.d1)
-    #     return Delta
-    #
-    # def EuroGamma(self):
-    #     Gamma = norm.ppf(norm.cdf(self.d1)) / (self.spot*self.sigma*np.sqrt(self.tau))
-    #     return Gamma
-    #
-    # def EuroTheta(self, rate, strike, tau, sigma, spot):
-    #     Theta = -rate*strike*np.exp(-rate*tau) * norm.cdf(self.d2) - (sigma*spot*norm.ppf(norm.cdf(self.d1))/(2*tau))
-    #     return Theta
-    #
-    # def EuroRho(self, tau, strike, rate):
-    #     Rho = tau*strike*np.exp(-rate*tau) * norm.cdf(self.d2)
-    #     return Rho
-    #
-    # def EuroVega(self, tau, spot):
-    #     Vega = np.sqrt(tau)*spot*norm.cdf(self.d1)
-    #     return Vega
-
-    # def ReturnGreeks(self):
-    #     EuroGreeks = {}
-    #     EuroGreeks['Delta'] = self.Delta
-    #     EuroGreeks['Gamma'] = self.Gamma
-    #     EuroGreeks['Theta'] = self.Theta
-    #     EuroGreeks['Rho'] = self.Rho
-    #     EuroGreeks['Vega'] = self.Vega
-    #
-    #     return EuroGreeks
-
-
     def SetVbar(self, Vbar):
         self.Vbar = Vbar
 
@@ -161,7 +178,7 @@ class EuropeanLookback():
 def main():
 
     ###### Initialize Parameters ######
-    strike = 100
+    strike = 80
     t = 1
     expiry = 10
     spot = 105

@@ -26,23 +26,28 @@ import numpy as np
 #         self.Vega = self.EuroVega(tau, spot)
 
 def EuroDelta(d1):
+    # Delta is the price sensitivity
     Delta = norm.cdf(d1)
     return Delta
 
 def EuroGamma(d1, spot, sigma, tau):
+    # Gamma is a second order time-price sensitivity
     Gamma = norm.ppf(norm.cdf(d1)) / (spot*sigma*np.sqrt(tau))
     return Gamma
 
 def EuroTheta(d1, d2, rate, strike, tau, sigma, spot):
+    # Theta is the time sensitivity
     Theta = -rate*strike*np.exp(-rate*tau) * norm.cdf(d2) - \
             (sigma*spot*norm.ppf(norm.cdf(d1))/(2*tau))
     return Theta
 
 def EuroRho(d2, tau, strike, rate):
+    # Rho is the interest rate sensitivity
     Rho = tau*strike*np.exp(-rate*tau) * norm.cdf(d2)
     return Rho
 
 def EuroVega(d1, tau, spot):
+    # Vega is a volatility sensitivity
     Vega = np.sqrt(tau)*spot*norm.cdf(d1)
     return Vega
 
