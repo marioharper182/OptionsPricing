@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="106cf297-0da5-4ba7-a0f9-d376e79b200f" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PythonEngine/EuropeanFixedStrike.py" afterPath="$PROJECT_DIR$/PythonEngine/EuropeanFixedStrike.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PythonEngine/EuropeanGreeks.py" afterPath="$PROJECT_DIR$/PythonEngine/EuropeanGreeks.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="106cf297-0da5-4ba7-a0f9-d376e79b200f" name="Default" comment="" />
     <ignored path="optionspricing.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -89,7 +85,7 @@
       <file leaf-file-name="EuropeanFixedStrike.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/PythonEngine/EuropeanFixedStrike.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.58666664" vertical-offset="2684" max-vertical-offset="4158">
+            <state vertical-scroll-proportion="0.58764607" vertical-offset="2684" max-vertical-offset="4158">
               <caret line="140" column="0" selection-start-line="137" selection-start-column="0" selection-end-line="146" selection-end-column="58" />
               <folding>
                 <element signature="e#6421#6437#0" expanded="false" />
@@ -198,7 +194,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../emit" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../schistosomiasis" />
     <property name="FullScreen" value="false" />
     <property name="recentsLimit" value="5" />
     <property name="options.lastSelected" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
@@ -435,7 +431,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39961758" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1022,7 +1018,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/PythonEngine/EuropeanFixedStrike.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.58666664" vertical-offset="2684" max-vertical-offset="4158">
+        <state vertical-scroll-proportion="0.58764607" vertical-offset="2684" max-vertical-offset="4158">
           <caret line="140" column="0" selection-start-line="137" selection-start-column="0" selection-end-line="146" selection-end-column="58" />
           <folding>
             <element signature="e#6421#6437#0" expanded="false" />
