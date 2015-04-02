@@ -2,14 +2,16 @@ __author__ = 'Mario'
 import numpy as np
 from EuropeanGreeks import *
 from scipy.stats import norm
-
+import time
+from numba import *
+from numbapro import cuda
 
 class EuropeanLookback():
     def __init__(self, strike, t, expiry, spot, sigma, rate, dividend, alpha, dt):
 
         # Instantiate variables
         self.strike = strike
-        self.t = t
+        # self.t = t
         self.expiry = expiry
         self.tau = expiry - t
         self.spot = spot
@@ -24,7 +26,7 @@ class EuropeanLookback():
         self.xi = xi = .025
 
         self.N = N = 100
-        self.M = M = 200
+        self.M = M = 2000
 
         self.beta1 = -.88
         self.beta2 = -.42
@@ -41,11 +43,21 @@ class EuropeanLookback():
 
         self.tau = tau = self.expiry-self.t
 
+        timenaive0 = time.time()
         self.matrixengine(spot, rate, sigma, expiry, N, M, strike, sigma2)
+        timenaive1 = time.time()
+
         # self.montecarloengine()
+
+        timeCV0 = time.time()
         self.VectorizedMonteCarlo(spot, rate, sigma, expiry, N, M, strike, sigma2)
+        timeCV1 = time.time()
+
+        print("Time of Naive: %f msec" % ((timenaive1 - timenaive0) * 1000))
+        print("Time of ControlVariate: %f msec" % ((timeCV1 - timeCV0) * 1000))
 
     def matrixengine(self, spot, rate, sigma, expiry, N, M, strike, sigma2):
+
         ### Calculate the trivial lookback option
         newdt = float(expiry)/float(N) # Get the dt for the Weiner process
         dW = np.sqrt(newdt)*np.random.normal(0,1,(M,N-1)) # Create the brownian motion
@@ -63,6 +75,12 @@ class EuropeanLookback():
         present_val = np.exp(-rate*expiry)*call_val
         print('This is the matrix, naive monte carlo: ',present_val)
 
+        sum_CT = sum(option_val)
+        sum_CT2 = sum([i**2 for i in option_val])
+
+        SD = np.sqrt((sum_CT2 - sum_CT*sum_CT/self.M)*np.exp(-2*self.rate*self.expiry)/(self.M-1))
+        SE = SD/np.sqrt(self.M)
+        print(SD, SE)
         # ### Initialize Control Variates ###
         # sig2 = self.sigma**2
         # alphadt = self.alpha*self.dt
@@ -253,6 +271,7 @@ class EuropeanLookback():
         return vardic
 
 def main():
+    timeintial = time.time()
 
     ###### Initialize Parameters ######
     strike = 80
