@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="106cf297-0da5-4ba7-a0f9-d376e79b200f" name="Default" comment="" />
+    <list default="true" id="106cf297-0da5-4ba7-a0f9-d376e79b200f" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PythonEngine/EuropeanFixedStrike.py" afterPath="$PROJECT_DIR$/PythonEngine/EuropeanFixedStrike.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="optionspricing.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,28 +20,6 @@
   </component>
   <component name="DaemonCodeAnalyzer">
     <disable_hints />
-  </component>
-  <component name="DockManager">
-    <window id="1">
-      <content type="file-editors">
-        <state>
-          <leaf>
-            <file leaf-file-name="EuropeanGreeks.py" pinned="false" current-in-tab="true">
-              <entry file="file://$PROJECT_DIR$/PythonEngine/EuropeanGreeks.py">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state vertical-scroll-proportion="0.10220674" vertical-offset="506" max-vertical-offset="1672">
-                    <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="60" selection-end-column="13" />
-                    <folding>
-                      <element signature="e#27#55#0" expanded="true" />
-                    </folding>
-                  </state>
-                </provider>
-              </entry>
-            </file>
-          </leaf>
-        </state>
-      </content>
-    </window>
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
@@ -85,15 +66,25 @@
       <file leaf-file-name="EuropeanFixedStrike.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/PythonEngine/EuropeanFixedStrike.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.58764607" vertical-offset="2684" max-vertical-offset="4158">
-              <caret line="140" column="0" selection-start-line="137" selection-start-column="0" selection-end-line="146" selection-end-column="58" />
+            <state vertical-scroll-proportion="0.67310786" vertical-offset="396" max-vertical-offset="5852">
+              <caret line="39" column="53" selection-start-line="39" selection-start-column="53" selection-end-line="39" selection-end-column="53" />
               <folding>
-                <element signature="e#6421#6437#0" expanded="false" />
-                <element signature="e#6472#6484#0" expanded="false" />
-                <element signature="e#6517#6527#0" expanded="false" />
-                <element signature="e#6560#6570#0" expanded="false" />
-                <element signature="e#6608#7047#0" expanded="false" />
+                <element signature="e#10158#10174#0" expanded="false" />
+                <element signature="e#10209#10221#0" expanded="false" />
+                <element signature="e#10254#10264#0" expanded="false" />
+                <element signature="e#10297#10307#0" expanded="false" />
+                <element signature="e#10345#10784#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EuropeanGreeks.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PythonEngine/EuropeanGreeks.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="920" max-vertical-offset="1650">
+              <caret line="53" column="4" selection-start-line="53" selection-start-column="4" selection-end-line="53" selection-end-column="4" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -108,8 +99,8 @@
       <list>
         <option value="$PROJECT_DIR$/Accelerate/blackscholes_numba.py" />
         <option value="$PROJECT_DIR$/Accelerate/blackscholes.py" />
-        <option value="$PROJECT_DIR$/PythonEngine/EuropeanFixedStrike.py" />
         <option value="$PROJECT_DIR$/PythonEngine/EuropeanGreeks.py" />
+        <option value="$PROJECT_DIR$/PythonEngine/EuropeanFixedStrike.py" />
       </list>
     </option>
   </component>
@@ -194,7 +185,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../schistosomiasis" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../emit" />
     <property name="FullScreen" value="false" />
     <property name="recentsLimit" value="5" />
     <property name="options.lastSelected" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
@@ -427,11 +418,11 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3291866" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3288719" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.37894738" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -467,8 +458,28 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/PythonEngine/EuropeanFixedStrike.py</url>
-          <line>85</line>
+          <line>78</line>
           <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/PythonEngine/EuropeanFixedStrike.py</url>
+          <line>217</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/PythonEngine/EuropeanFixedStrike.py</url>
+          <line>173</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/PythonEngine/EuropeanFixedStrike.py</url>
+          <line>208</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/PythonEngine/EuropeanFixedStrike.py</url>
+          <line>176</line>
+          <option name="timeStamp" value="14" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
@@ -478,7 +489,7 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="9" />
+      <option name="time" value="15" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -508,11 +519,11 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3850">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#6421#6437#0" expanded="false" />
-            <element signature="e#6472#6484#0" expanded="false" />
-            <element signature="e#6517#6527#0" expanded="false" />
-            <element signature="e#6560#6570#0" expanded="false" />
-            <element signature="e#6608#7047#0" expanded="false" />
+            <element signature="e#10158#10174#0" expanded="false" />
+            <element signature="e#10209#10221#0" expanded="false" />
+            <element signature="e#10254#10264#0" expanded="false" />
+            <element signature="e#10297#10307#0" expanded="false" />
+            <element signature="e#10345#10784#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -521,9 +532,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="374" max-vertical-offset="1364">
           <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="43" />
-          <folding>
-            <element signature="e#27#55#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -562,11 +571,11 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3850">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#6421#6437#0" expanded="false" />
-            <element signature="e#6472#6484#0" expanded="false" />
-            <element signature="e#6517#6527#0" expanded="false" />
-            <element signature="e#6560#6570#0" expanded="false" />
-            <element signature="e#6608#7047#0" expanded="false" />
+            <element signature="e#10158#10174#0" expanded="false" />
+            <element signature="e#10209#10221#0" expanded="false" />
+            <element signature="e#10254#10264#0" expanded="false" />
+            <element signature="e#10297#10307#0" expanded="false" />
+            <element signature="e#10345#10784#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -575,9 +584,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="374" max-vertical-offset="1364">
           <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="43" />
-          <folding>
-            <element signature="e#27#55#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -616,11 +623,11 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2975">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#6421#6437#0" expanded="false" />
-            <element signature="e#6472#6484#0" expanded="false" />
-            <element signature="e#6517#6527#0" expanded="false" />
-            <element signature="e#6560#6570#0" expanded="false" />
-            <element signature="e#6608#7047#0" expanded="false" />
+            <element signature="e#10158#10174#0" expanded="false" />
+            <element signature="e#10209#10221#0" expanded="false" />
+            <element signature="e#10254#10264#0" expanded="false" />
+            <element signature="e#10297#10307#0" expanded="false" />
+            <element signature="e#10345#10784#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -629,9 +636,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="170" max-vertical-offset="1054">
           <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="43" />
-          <folding>
-            <element signature="e#27#55#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -670,11 +675,11 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2975">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#6421#6437#0" expanded="false" />
-            <element signature="e#6472#6484#0" expanded="false" />
-            <element signature="e#6517#6527#0" expanded="false" />
-            <element signature="e#6560#6570#0" expanded="false" />
-            <element signature="e#6608#7047#0" expanded="false" />
+            <element signature="e#10158#10174#0" expanded="false" />
+            <element signature="e#10209#10221#0" expanded="false" />
+            <element signature="e#10254#10264#0" expanded="false" />
+            <element signature="e#10297#10307#0" expanded="false" />
+            <element signature="e#10345#10784#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -683,9 +688,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="170" max-vertical-offset="1054">
           <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="43" />
-          <folding>
-            <element signature="e#27#55#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -724,11 +727,11 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="748" max-vertical-offset="1166">
           <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
           <folding>
-            <element signature="e#6421#6437#0" expanded="false" />
-            <element signature="e#6472#6484#0" expanded="false" />
-            <element signature="e#6517#6527#0" expanded="false" />
-            <element signature="e#6560#6570#0" expanded="false" />
-            <element signature="e#6608#7047#0" expanded="false" />
+            <element signature="e#10158#10174#0" expanded="false" />
+            <element signature="e#10209#10221#0" expanded="false" />
+            <element signature="e#10254#10264#0" expanded="false" />
+            <element signature="e#10297#10307#0" expanded="false" />
+            <element signature="e#10345#10784#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -768,11 +771,11 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="100">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#6421#6437#0" expanded="false" />
-            <element signature="e#6472#6484#0" expanded="false" />
-            <element signature="e#6517#6527#0" expanded="false" />
-            <element signature="e#6560#6570#0" expanded="false" />
-            <element signature="e#6608#7047#0" expanded="false" />
+            <element signature="e#10158#10174#0" expanded="false" />
+            <element signature="e#10209#10221#0" expanded="false" />
+            <element signature="e#10254#10264#0" expanded="false" />
+            <element signature="e#10297#10307#0" expanded="false" />
+            <element signature="e#10345#10784#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -812,11 +815,11 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="100">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#6421#6437#0" expanded="false" />
-            <element signature="e#6472#6484#0" expanded="false" />
-            <element signature="e#6517#6527#0" expanded="false" />
-            <element signature="e#6560#6570#0" expanded="false" />
-            <element signature="e#6608#7047#0" expanded="false" />
+            <element signature="e#10158#10174#0" expanded="false" />
+            <element signature="e#10209#10221#0" expanded="false" />
+            <element signature="e#10254#10264#0" expanded="false" />
+            <element signature="e#10297#10307#0" expanded="false" />
+            <element signature="e#10345#10784#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -856,11 +859,11 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="100">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#6421#6437#0" expanded="false" />
-            <element signature="e#6472#6484#0" expanded="false" />
-            <element signature="e#6517#6527#0" expanded="false" />
-            <element signature="e#6560#6570#0" expanded="false" />
-            <element signature="e#6608#7047#0" expanded="false" />
+            <element signature="e#10158#10174#0" expanded="false" />
+            <element signature="e#10209#10221#0" expanded="false" />
+            <element signature="e#10254#10264#0" expanded="false" />
+            <element signature="e#10297#10307#0" expanded="false" />
+            <element signature="e#10345#10784#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -900,11 +903,11 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="100">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#6421#6437#0" expanded="false" />
-            <element signature="e#6472#6484#0" expanded="false" />
-            <element signature="e#6517#6527#0" expanded="false" />
-            <element signature="e#6560#6570#0" expanded="false" />
-            <element signature="e#6608#7047#0" expanded="false" />
+            <element signature="e#10158#10174#0" expanded="false" />
+            <element signature="e#10209#10221#0" expanded="false" />
+            <element signature="e#10254#10264#0" expanded="false" />
+            <element signature="e#10297#10307#0" expanded="false" />
+            <element signature="e#10345#10784#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1008,24 +1011,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/PythonEngine/EuropeanGreeks.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.10220674" vertical-offset="506" max-vertical-offset="1672">
-          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="60" selection-end-column="13" />
-          <folding>
-            <element signature="e#27#55#0" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.0" vertical-offset="920" max-vertical-offset="1650">
+          <caret line="53" column="4" selection-start-line="53" selection-start-column="4" selection-end-line="53" selection-end-column="4" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/PythonEngine/EuropeanFixedStrike.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.58764607" vertical-offset="2684" max-vertical-offset="4158">
-          <caret line="140" column="0" selection-start-line="137" selection-start-column="0" selection-end-line="146" selection-end-column="58" />
+        <state vertical-scroll-proportion="0.67310786" vertical-offset="396" max-vertical-offset="5852">
+          <caret line="39" column="53" selection-start-line="39" selection-start-column="53" selection-end-line="39" selection-end-column="53" />
           <folding>
-            <element signature="e#6421#6437#0" expanded="false" />
-            <element signature="e#6472#6484#0" expanded="false" />
-            <element signature="e#6517#6527#0" expanded="false" />
-            <element signature="e#6560#6570#0" expanded="false" />
-            <element signature="e#6608#7047#0" expanded="false" />
+            <element signature="e#10158#10174#0" expanded="false" />
+            <element signature="e#10209#10221#0" expanded="false" />
+            <element signature="e#10254#10264#0" expanded="false" />
+            <element signature="e#10297#10307#0" expanded="false" />
+            <element signature="e#10345#10784#0" expanded="false" />
           </folding>
         </state>
       </provider>
