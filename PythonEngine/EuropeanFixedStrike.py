@@ -118,8 +118,6 @@ class EuropeanLookback():
         for j in range(1, self.M):
             St1 = self.spot
             St2 = self.spot
-            # St1.append(self.spot)
-            # St2.append(self.spot)
             Vt = sig2
 
             MaxSt1 = self.spot

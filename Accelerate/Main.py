@@ -4,7 +4,7 @@ import wx
 import wx.xrc, wx.html
 import sys
 
-from pnlGui import MainPanel
+from pnlEuropean import MainPanel
 
 ###########################################################################
 ## Class MainPanel

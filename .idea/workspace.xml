@@ -2,9 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="106cf297-0da5-4ba7-a0f9-d376e79b200f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PythonEngine/EuropeanFixedStrikeCUDA.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Gui/View/ApplicationFrame.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Gui/View/Bitmaps.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Gui/Controller/ColorInformation.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Gui/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Gui/View/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Gui/View/pnlEuropean.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PythonEngine/EuropeanFixedStrike.py" afterPath="$PROJECT_DIR$/PythonEngine/EuropeanFixedStrike.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Accelerate/Main.py" afterPath="$PROJECT_DIR$/Accelerate/Main.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MOVED" beforePath="E:\Projects\optionspricing\Accelerate\pnlGui.py" afterPath="$PROJECT_DIR$/Accelerate/pnlEuropean.py" />
     </list>
     <ignored path="optionspricing.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,77 +35,94 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="blackscholes.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Accelerate/blackscholes.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="66" max-vertical-offset="1870">
-              <caret line="67" column="31" selection-start-line="67" selection-start-column="31" selection-end-line="68" selection-end-column="41" />
-              <folding>
-                <element signature="e#0#18#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="blackscholes_cuda.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Accelerate/blackscholes_cuda.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.793103" vertical-offset="2223" max-vertical-offset="2816">
-              <caret line="110" column="9" selection-start-line="110" selection-start-column="7" selection-end-line="110" selection-end-column="9" />
-              <folding>
-                <element signature="e#0#18#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="blackscholes_numba.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Accelerate/blackscholes_numba.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1518" max-vertical-offset="2090">
-              <caret line="69" column="70" selection-start-line="69" selection-start-column="70" selection-end-line="69" selection-end-column="70" />
-              <folding>
-                <element signature="e#0#18#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="EuropeanFixedStrike.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PythonEngine/EuropeanFixedStrike.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="440" max-vertical-offset="4620">
-              <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="43" selection-end-column="43" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="5648" max-vertical-offset="6270">
+              <caret line="297" column="0" selection-start-line="297" selection-start-column="0" selection-end-line="298" selection-end-column="10" />
               <folding>
                 <element signature="e#21#39#0" expanded="true" />
-                <element signature="e#4124#7350#0" expanded="false" />
-                <element signature="e#10742#10758#0" expanded="false" />
-                <element signature="e#10793#10805#0" expanded="false" />
-                <element signature="e#10838#10848#0" expanded="false" />
-                <element signature="e#10881#10891#0" expanded="false" />
-                <element signature="e#10929#11368#0" expanded="false" />
+                <element signature="e#10670#10686#0" expanded="false" />
+                <element signature="e#10721#10733#0" expanded="false" />
+                <element signature="e#10766#10776#0" expanded="false" />
+                <element signature="e#10809#10819#0" expanded="false" />
+                <element signature="e#10857#11296#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EuropeanFixedStrikeCUDA.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/PythonEngine/EuropeanFixedStrikeCUDA.py">
+      <file leaf-file-name="ApplicationFrame.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Gui/View/ApplicationFrame.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="3.8615136" vertical-offset="0" max-vertical-offset="4576">
-              <caret line="109" column="55" selection-start-line="109" selection-start-column="55" selection-end-line="110" selection-end-column="54" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="2741" max-vertical-offset="5610">
+              <caret line="72" column="0" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
               <folding>
-                <element signature="e#26#44#0" expanded="true" />
+                <element signature="e#27#36#0" expanded="true" />
+                <element signature="e#3902#5231#0" expanded="false" />
+                <element signature="e#5267#5352#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EuropeanGreeks.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PythonEngine/EuropeanGreeks.py">
+      <file leaf-file-name="Main.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Accelerate/Main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="920" max-vertical-offset="1650">
-              <caret line="53" column="4" selection-start-line="53" selection-start-column="4" selection-end-line="53" selection-end-column="4" />
+            <state vertical-scroll-proportion="1.2045089" vertical-offset="0" max-vertical-offset="2244">
+              <caret line="34" column="14" selection-start-line="34" selection-start-column="14" selection-end-line="34" selection-end-column="14" />
+              <folding>
+                <element signature="e#22#31#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pnlEuropean.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Gui/View/pnlEuropean.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="132" max-vertical-offset="1826">
+              <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pnlEuropean.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Accelerate/pnlEuropean.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1826">
+              <caret line="21" column="70" selection-start-line="21" selection-start-column="70" selection-end-line="21" selection-end-column="70" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="title_icons.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Gui/View/title_icons.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="2310" max-vertical-offset="3740">
+              <caret line="105" column="0" selection-start-line="105" selection-start-column="0" selection-end-line="105" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ColorInformation.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Gui/Controller/ColorInformation.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="22" max-vertical-offset="506">
+              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Bitmaps.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Gui/View/Bitmaps.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="220" max-vertical-offset="4224">
+              <caret line="10" column="39" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="39" />
               <folding />
             </state>
           </provider>
@@ -115,8 +139,13 @@
         <option value="$PROJECT_DIR$/Accelerate/blackscholes_numba.py" />
         <option value="$PROJECT_DIR$/PythonEngine/EuropeanGreeks.py" />
         <option value="$PROJECT_DIR$/Accelerate/blackscholes.py" />
-        <option value="$PROJECT_DIR$/PythonEngine/EuropeanFixedStrike.py" />
         <option value="$PROJECT_DIR$/PythonEngine/EuropeanFixedStrikeCUDA.py" />
+        <option value="$PROJECT_DIR$/PythonEngine/EuropeanFixedStrike.py" />
+        <option value="$PROJECT_DIR$/Gui/View/Bitmaps.py" />
+        <option value="$PROJECT_DIR$/Gui/Controller/ColorInformation.py" />
+        <option value="$PROJECT_DIR$/Gui/View/title_icons.py" />
+        <option value="$PROJECT_DIR$/Gui/View/pnlEuropean.py" />
+        <option value="$PROJECT_DIR$/Gui/View/ApplicationFrame.py" />
       </list>
     </option>
   </component>
@@ -191,6 +220,56 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="Gui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="optionspricing" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="optionspricing" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Gui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="View" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="optionspricing" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="optionspricing" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Gui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Controller" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="optionspricing" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="optionspricing" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="Accelerate" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -214,49 +293,15 @@
       <console-settings />
     </option>
   </component>
-  <component name="RunManager" selected="Python.EuropeanFixedStrikeCUDA">
-    <configuration default="false" name="blackscholes" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Accelerate" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="optionspricing" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Accelerate/blackscholes.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <RunnerSettings RunnerId="PyDebugRunner" />
-      <RunnerSettings RunnerId="PythonRunner" />
-      <ConfigurationWrapper RunnerId="PyDebugRunner" />
-      <ConfigurationWrapper RunnerId="PythonRunner" />
-      <method />
-    </configuration>
-    <configuration default="false" name="EuropeanFixedStrike" type="PythonConfigurationType" factoryName="Python" singleton="true" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/PythonEngine" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="optionspricing" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PythonEngine/EuropeanFixedStrike.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <RunnerSettings RunnerId="PyDebugRunner" />
-      <RunnerSettings RunnerId="PythonRunner" />
-      <ConfigurationWrapper RunnerId="PyDebugRunner" />
-      <ConfigurationWrapper RunnerId="PythonRunner" />
-      <method />
-    </configuration>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Projects\optionspricing\PythonEngine" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Projects\optionspricing\Gui\View" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.ApplicationFrame">
     <configuration default="false" name="blackscholes_cuda" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -289,6 +334,65 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="optionspricing" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PythonEngine/EuropeanFixedStrikeCUDA.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="ApplicationFrame" type="PythonConfigurationType" factoryName="Python" singleton="true" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Gui/View" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="optionspricing" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Gui/View/ApplicationFrame.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <RunnerSettings RunnerId="PyDebugRunner" />
+      <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PyDebugRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="pnlGui" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Accelerate" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="optionspricing" />
+      <option name="SCRIPT_NAME" value="E:\Projects\optionspricing\Accelerate\pnlEuropean.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Main" type="PythonConfigurationType" factoryName="Python" singleton="true" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Accelerate" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="optionspricing" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Accelerate/Main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <RunnerSettings RunnerId="PythonRunner" />
@@ -417,18 +521,20 @@
       <option name="USE_PARAM" value="false" />
       <method />
     </configuration>
-    <list size="4">
-      <item index="0" class="java.lang.String" itemvalue="Python.blackscholes" />
-      <item index="1" class="java.lang.String" itemvalue="Python.EuropeanFixedStrike" />
-      <item index="2" class="java.lang.String" itemvalue="Python.blackscholes_cuda" />
-      <item index="3" class="java.lang.String" itemvalue="Python.EuropeanFixedStrikeCUDA" />
+    <list size="5">
+      <item index="0" class="java.lang.String" itemvalue="Python.blackscholes_cuda" />
+      <item index="1" class="java.lang.String" itemvalue="Python.EuropeanFixedStrikeCUDA" />
+      <item index="2" class="java.lang.String" itemvalue="Python.ApplicationFrame" />
+      <item index="3" class="java.lang.String" itemvalue="Python.pnlGui" />
+      <item index="4" class="java.lang.String" itemvalue="Python.Main" />
     </list>
     <recent_temporary>
-      <list size="4">
-        <item index="0" class="java.lang.String" itemvalue="Python.EuropeanFixedStrikeCUDA" />
-        <item index="1" class="java.lang.String" itemvalue="Python.blackscholes_cuda" />
-        <item index="2" class="java.lang.String" itemvalue="Python.blackscholes" />
-        <item index="3" class="java.lang.String" itemvalue="Python.EuropeanFixedStrike" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Python.ApplicationFrame" />
+        <item index="1" class="java.lang.String" itemvalue="Python.Main" />
+        <item index="2" class="java.lang.String" itemvalue="Python.pnlGui" />
+        <item index="3" class="java.lang.String" itemvalue="Python.EuropeanFixedStrikeCUDA" />
+        <item index="4" class="java.lang.String" itemvalue="Python.blackscholes_cuda" />
       </list>
     </recent_temporary>
   </component>
@@ -521,23 +627,28 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/PythonEngine/EuropeanFixedStrike.py</url>
-          <line>235</line>
+          <line>233</line>
           <option name="timeStamp" value="11" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/PythonEngine/EuropeanFixedStrike.py</url>
-          <line>191</line>
+          <line>189</line>
           <option name="timeStamp" value="12" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/PythonEngine/EuropeanFixedStrike.py</url>
-          <line>226</line>
+          <line>224</line>
           <option name="timeStamp" value="13" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/PythonEngine/EuropeanFixedStrike.py</url>
-          <line>194</line>
+          <line>192</line>
           <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/Gui/View/ApplicationFrame.py</url>
+          <line>155</line>
+          <option name="timeStamp" value="15" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
@@ -547,115 +658,17 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="15" />
+      <option name="time" value="17" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Accelerate/blackscholes_numba.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1518" max-vertical-offset="2090">
-          <caret line="69" column="70" selection-start-line="69" selection-start-column="70" selection-end-line="69" selection-end-column="70" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PythonEngine/EuropeanFixedStrike.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3850">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#21#39#0" expanded="true" />
-            <element signature="e#4124#7350#0" expanded="false" />
-            <element signature="e#10742#10758#0" expanded="false" />
-            <element signature="e#10793#10805#0" expanded="false" />
-            <element signature="e#10838#10848#0" expanded="false" />
-            <element signature="e#10881#10891#0" expanded="false" />
-            <element signature="e#10929#11368#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PythonEngine/EuropeanGreeks.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="374" max-vertical-offset="1364">
-          <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Accelerate/blackscholes.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1540" max-vertical-offset="1870">
-          <caret line="70" column="23" selection-start-line="70" selection-start-column="23" selection-end-line="70" selection-end-column="23" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Accelerate/blackscholes_cuda.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="2068" max-vertical-offset="2816">
-          <caret line="94" column="59" selection-start-line="94" selection-start-column="59" selection-end-line="94" selection-end-column="59" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Accelerate/blackscholes_numba.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1518" max-vertical-offset="2090">
-          <caret line="69" column="70" selection-start-line="69" selection-start-column="70" selection-end-line="69" selection-end-column="70" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PythonEngine/EuropeanFixedStrike.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3850">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#21#39#0" expanded="true" />
-            <element signature="e#4124#7350#0" expanded="false" />
-            <element signature="e#10742#10758#0" expanded="false" />
-            <element signature="e#10793#10805#0" expanded="false" />
-            <element signature="e#10838#10848#0" expanded="false" />
-            <element signature="e#10881#10891#0" expanded="false" />
-            <element signature="e#10929#11368#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PythonEngine/EuropeanGreeks.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="374" max-vertical-offset="1364">
-          <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Accelerate/blackscholes.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1190" max-vertical-offset="1445">
-          <caret line="70" column="23" selection-start-line="70" selection-start-column="23" selection-end-line="70" selection-end-column="23" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Accelerate/blackscholes_cuda.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1158" max-vertical-offset="2176">
           <caret line="94" column="59" selection-start-line="94" selection-start-column="59" selection-end-line="94" selection-end-column="59" />
           <folding>
-            <element signature="e#0#18#0" expanded="true" />
+            <element signature="e#0#18#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -665,7 +678,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="1173" max-vertical-offset="1615">
           <caret line="69" column="70" selection-start-line="69" selection-start-column="70" selection-end-line="69" selection-end-column="70" />
           <folding>
-            <element signature="e#0#18#0" expanded="true" />
+            <element signature="e#0#18#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -676,12 +689,11 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#21#39#0" expanded="true" />
-            <element signature="e#4124#7350#0" expanded="false" />
-            <element signature="e#10742#10758#0" expanded="false" />
-            <element signature="e#10793#10805#0" expanded="false" />
-            <element signature="e#10838#10848#0" expanded="false" />
-            <element signature="e#10881#10891#0" expanded="false" />
-            <element signature="e#10929#11368#0" expanded="false" />
+            <element signature="e#10670#10686#0" expanded="false" />
+            <element signature="e#10721#10733#0" expanded="false" />
+            <element signature="e#10766#10776#0" expanded="false" />
+            <element signature="e#10809#10819#0" expanded="false" />
+            <element signature="e#10857#11296#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -699,7 +711,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="1190" max-vertical-offset="1445">
           <caret line="70" column="23" selection-start-line="70" selection-start-column="23" selection-end-line="70" selection-end-column="23" />
           <folding>
-            <element signature="e#0#18#0" expanded="true" />
+            <element signature="e#0#18#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -709,7 +721,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="1158" max-vertical-offset="2176">
           <caret line="94" column="59" selection-start-line="94" selection-start-column="59" selection-end-line="94" selection-end-column="59" />
           <folding>
-            <element signature="e#0#18#0" expanded="true" />
+            <element signature="e#0#18#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -719,7 +731,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="1173" max-vertical-offset="1615">
           <caret line="69" column="70" selection-start-line="69" selection-start-column="70" selection-end-line="69" selection-end-column="70" />
           <folding>
-            <element signature="e#0#18#0" expanded="true" />
+            <element signature="e#0#18#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -730,12 +742,11 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#21#39#0" expanded="true" />
-            <element signature="e#4124#7350#0" expanded="false" />
-            <element signature="e#10742#10758#0" expanded="false" />
-            <element signature="e#10793#10805#0" expanded="false" />
-            <element signature="e#10838#10848#0" expanded="false" />
-            <element signature="e#10881#10891#0" expanded="false" />
-            <element signature="e#10929#11368#0" expanded="false" />
+            <element signature="e#10670#10686#0" expanded="false" />
+            <element signature="e#10721#10733#0" expanded="false" />
+            <element signature="e#10766#10776#0" expanded="false" />
+            <element signature="e#10809#10819#0" expanded="false" />
+            <element signature="e#10857#11296#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -753,7 +764,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="830" max-vertical-offset="1870">
           <caret line="70" column="23" selection-start-line="70" selection-start-column="23" selection-end-line="70" selection-end-column="23" />
           <folding>
-            <element signature="e#0#18#0" expanded="true" />
+            <element signature="e#0#18#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -763,7 +774,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2816">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#18#0" expanded="true" />
+            <element signature="e#0#18#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -773,7 +784,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="1050" max-vertical-offset="2090">
           <caret line="69" column="70" selection-start-line="69" selection-start-column="70" selection-end-line="69" selection-end-column="70" />
           <folding>
-            <element signature="e#0#18#0" expanded="true" />
+            <element signature="e#0#18#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -784,12 +795,11 @@
           <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
           <folding>
             <element signature="e#21#39#0" expanded="true" />
-            <element signature="e#4124#7350#0" expanded="false" />
-            <element signature="e#10742#10758#0" expanded="false" />
-            <element signature="e#10793#10805#0" expanded="false" />
-            <element signature="e#10838#10848#0" expanded="false" />
-            <element signature="e#10881#10891#0" expanded="false" />
-            <element signature="e#10929#11368#0" expanded="false" />
+            <element signature="e#10670#10686#0" expanded="false" />
+            <element signature="e#10721#10733#0" expanded="false" />
+            <element signature="e#10766#10776#0" expanded="false" />
+            <element signature="e#10809#10819#0" expanded="false" />
+            <element signature="e#10857#11296#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -799,7 +809,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="830" max-vertical-offset="1870">
           <caret line="70" column="23" selection-start-line="70" selection-start-column="23" selection-end-line="70" selection-end-column="23" />
           <folding>
-            <element signature="e#0#18#0" expanded="true" />
+            <element signature="e#0#18#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -809,7 +819,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="1799" max-vertical-offset="2816">
           <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
           <folding>
-            <element signature="e#0#18#0" expanded="true" />
+            <element signature="e#0#18#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -819,7 +829,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="1050" max-vertical-offset="2090">
           <caret line="69" column="70" selection-start-line="69" selection-start-column="70" selection-end-line="69" selection-end-column="70" />
           <folding>
-            <element signature="e#0#18#0" expanded="true" />
+            <element signature="e#0#18#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -830,12 +840,11 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#21#39#0" expanded="true" />
-            <element signature="e#4124#7350#0" expanded="false" />
-            <element signature="e#10742#10758#0" expanded="false" />
-            <element signature="e#10793#10805#0" expanded="false" />
-            <element signature="e#10838#10848#0" expanded="false" />
-            <element signature="e#10881#10891#0" expanded="false" />
-            <element signature="e#10929#11368#0" expanded="false" />
+            <element signature="e#10670#10686#0" expanded="false" />
+            <element signature="e#10721#10733#0" expanded="false" />
+            <element signature="e#10766#10776#0" expanded="false" />
+            <element signature="e#10809#10819#0" expanded="false" />
+            <element signature="e#10857#11296#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -845,7 +854,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="830" max-vertical-offset="1870">
           <caret line="70" column="23" selection-start-line="70" selection-start-column="23" selection-end-line="70" selection-end-column="23" />
           <folding>
-            <element signature="e#0#18#0" expanded="true" />
+            <element signature="e#0#18#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -855,7 +864,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="1799" max-vertical-offset="2816">
           <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
           <folding>
-            <element signature="e#0#18#0" expanded="true" />
+            <element signature="e#0#18#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -865,7 +874,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="1050" max-vertical-offset="2090">
           <caret line="69" column="70" selection-start-line="69" selection-start-column="70" selection-end-line="69" selection-end-column="70" />
           <folding>
-            <element signature="e#0#18#0" expanded="true" />
+            <element signature="e#0#18#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -876,12 +885,11 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#21#39#0" expanded="true" />
-            <element signature="e#4124#7350#0" expanded="false" />
-            <element signature="e#10742#10758#0" expanded="false" />
-            <element signature="e#10793#10805#0" expanded="false" />
-            <element signature="e#10838#10848#0" expanded="false" />
-            <element signature="e#10881#10891#0" expanded="false" />
-            <element signature="e#10929#11368#0" expanded="false" />
+            <element signature="e#10670#10686#0" expanded="false" />
+            <element signature="e#10721#10733#0" expanded="false" />
+            <element signature="e#10766#10776#0" expanded="false" />
+            <element signature="e#10809#10819#0" expanded="false" />
+            <element signature="e#10857#11296#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -891,7 +899,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="830" max-vertical-offset="1870">
           <caret line="70" column="23" selection-start-line="70" selection-start-column="23" selection-end-line="70" selection-end-column="23" />
           <folding>
-            <element signature="e#0#18#0" expanded="true" />
+            <element signature="e#0#18#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -901,7 +909,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="1799" max-vertical-offset="2816">
           <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
           <folding>
-            <element signature="e#0#18#0" expanded="true" />
+            <element signature="e#0#18#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -911,7 +919,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="1050" max-vertical-offset="2090">
           <caret line="69" column="70" selection-start-line="69" selection-start-column="70" selection-end-line="69" selection-end-column="70" />
           <folding>
-            <element signature="e#0#18#0" expanded="true" />
+            <element signature="e#0#18#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -922,12 +930,11 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#21#39#0" expanded="true" />
-            <element signature="e#4124#7350#0" expanded="false" />
-            <element signature="e#10742#10758#0" expanded="false" />
-            <element signature="e#10793#10805#0" expanded="false" />
-            <element signature="e#10838#10848#0" expanded="false" />
-            <element signature="e#10881#10891#0" expanded="false" />
-            <element signature="e#10929#11368#0" expanded="false" />
+            <element signature="e#10670#10686#0" expanded="false" />
+            <element signature="e#10721#10733#0" expanded="false" />
+            <element signature="e#10766#10776#0" expanded="false" />
+            <element signature="e#10809#10819#0" expanded="false" />
+            <element signature="e#10857#11296#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -937,7 +944,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="830" max-vertical-offset="1870">
           <caret line="70" column="23" selection-start-line="70" selection-start-column="23" selection-end-line="70" selection-end-column="23" />
           <folding>
-            <element signature="e#0#18#0" expanded="true" />
+            <element signature="e#0#18#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -947,7 +954,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="1799" max-vertical-offset="2816">
           <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
           <folding>
-            <element signature="e#0#18#0" expanded="true" />
+            <element signature="e#0#18#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -957,7 +964,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="1050" max-vertical-offset="2090">
           <caret line="69" column="70" selection-start-line="69" selection-start-column="70" selection-end-line="69" selection-end-column="70" />
           <folding>
-            <element signature="e#0#18#0" expanded="true" />
+            <element signature="e#0#18#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -968,12 +975,11 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#21#39#0" expanded="true" />
-            <element signature="e#4124#7350#0" expanded="false" />
-            <element signature="e#10742#10758#0" expanded="false" />
-            <element signature="e#10793#10805#0" expanded="false" />
-            <element signature="e#10838#10848#0" expanded="false" />
-            <element signature="e#10881#10891#0" expanded="false" />
-            <element signature="e#10929#11368#0" expanded="false" />
+            <element signature="e#10670#10686#0" expanded="false" />
+            <element signature="e#10721#10733#0" expanded="false" />
+            <element signature="e#10766#10776#0" expanded="false" />
+            <element signature="e#10809#10819#0" expanded="false" />
+            <element signature="e#10857#11296#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -983,7 +989,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="830" max-vertical-offset="1870">
           <caret line="70" column="23" selection-start-line="70" selection-start-column="23" selection-end-line="70" selection-end-column="23" />
           <folding>
-            <element signature="e#0#18#0" expanded="true" />
+            <element signature="e#0#18#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -993,7 +999,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="1799" max-vertical-offset="2816">
           <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
           <folding>
-            <element signature="e#0#18#0" expanded="true" />
+            <element signature="e#0#18#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1003,7 +1009,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2090">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#18#0" expanded="true" />
+            <element signature="e#0#18#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1013,7 +1019,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1870">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#18#0" expanded="true" />
+            <element signature="e#0#18#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1023,7 +1029,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="2112" max-vertical-offset="2816">
           <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
           <folding>
-            <element signature="e#0#18#0" expanded="true" />
+            <element signature="e#0#18#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1033,7 +1039,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="1219" max-vertical-offset="2090">
           <caret line="80" column="50" selection-start-line="80" selection-start-column="50" selection-end-line="80" selection-end-column="50" />
           <folding>
-            <element signature="e#0#18#0" expanded="true" />
+            <element signature="e#0#18#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1043,7 +1049,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="1050" max-vertical-offset="2090">
           <caret line="69" column="70" selection-start-line="69" selection-start-column="70" selection-end-line="69" selection-end-column="70" />
           <folding>
-            <element signature="e#0#18#0" expanded="true" />
+            <element signature="e#0#18#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1068,43 +1074,120 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1870">
           <caret line="67" column="31" selection-start-line="67" selection-start-column="31" selection-end-line="68" selection-end-column="41" />
           <folding>
-            <element signature="e#0#18#0" expanded="true" />
+            <element signature="e#0#18#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Accelerate/blackscholes_cuda.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.793103" vertical-offset="2223" max-vertical-offset="2816">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2223" max-vertical-offset="2816">
           <caret line="110" column="9" selection-start-line="110" selection-start-column="7" selection-end-line="110" selection-end-column="9" />
           <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PythonEngine/EuropeanFixedStrike.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="440" max-vertical-offset="4620">
-          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="43" selection-end-column="43" />
-          <folding>
-            <element signature="e#21#39#0" expanded="true" />
-            <element signature="e#4124#7350#0" expanded="false" />
-            <element signature="e#10742#10758#0" expanded="false" />
-            <element signature="e#10793#10805#0" expanded="false" />
-            <element signature="e#10838#10848#0" expanded="false" />
-            <element signature="e#10881#10891#0" expanded="false" />
-            <element signature="e#10929#11368#0" expanded="false" />
+            <element signature="e#0#18#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/PythonEngine/EuropeanFixedStrikeCUDA.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="3.8615136" vertical-offset="0" max-vertical-offset="4576">
-          <caret line="109" column="55" selection-start-line="109" selection-start-column="55" selection-end-line="110" selection-end-column="54" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4576">
+          <caret line="15" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding>
             <element signature="e#26#44#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PythonEngine/EuropeanFixedStrike.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="5648" max-vertical-offset="6270">
+          <caret line="297" column="0" selection-start-line="297" selection-start-column="0" selection-end-line="298" selection-end-column="10" />
+          <folding>
+            <element signature="e#21#39#0" expanded="true" />
+            <element signature="e#10670#10686#0" expanded="false" />
+            <element signature="e#10721#10733#0" expanded="false" />
+            <element signature="e#10766#10776#0" expanded="false" />
+            <element signature="e#10809#10819#0" expanded="false" />
+            <element signature="e#10857#11296#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gui/Controller/ColorInformation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="506">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gui/View/Bitmaps.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4224">
+          <caret line="10" column="39" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gui/View/title_icons.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2723" max-vertical-offset="3740">
+          <caret line="105" column="0" selection-start-line="105" selection-start-column="0" selection-end-line="105" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Accelerate/pnlEuropean.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1826">
+          <caret line="21" column="70" selection-start-line="21" selection-start-column="70" selection-end-line="21" selection-end-column="70" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/SSD_WinProgramFiles/Anaconda2/Lib/site-packages/wx-3.0-msw/wx/_core.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="174705" max-vertical-offset="372636">
+          <caret line="7957" column="42" selection-start-line="7957" selection-start-column="42" selection-end-line="7957" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/SSD_WinProgramFiles/Anaconda2/Lib/site-packages/wx-3.0-msw/wx/lib/agw/ribbon/buttonbar.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3327645" vertical-offset="27745" max-vertical-offset="28974">
+          <caret line="1273" column="0" selection-start-line="1273" selection-start-column="0" selection-end-line="1273" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gui/View/ApplicationFrame.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2741" max-vertical-offset="5610">
+          <caret line="72" column="0" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
+          <folding>
+            <element signature="e#27#36#0" expanded="true" />
+            <element signature="e#3902#5231#0" expanded="false" />
+            <element signature="e#5267#5352#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gui/View/pnlEuropean.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="132" max-vertical-offset="1826">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Accelerate/Main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.2045089" vertical-offset="0" max-vertical-offset="2244">
+          <caret line="34" column="14" selection-start-line="34" selection-start-column="14" selection-end-line="34" selection-end-column="14" />
+          <folding>
+            <element signature="e#22#31#0" expanded="true" />
           </folding>
         </state>
       </provider>
