@@ -6,6 +6,7 @@ from wx.lib.embeddedimage import PyEmbeddedImage
 from Bitmaps import *
 from title_icons import *
 from pnlEuropean import PanelEuropean
+from pnlWelcome import PanelWelcome
 
 ID_CIRCLE = wx.ID_HIGHEST + 1
 ID_CROSS = ID_CIRCLE + 1
@@ -60,15 +61,20 @@ class AppMain(wx.Frame):
         wx.Frame.__init__(self, parent, id, title, pos, size, style)
 
         self.SetSizeHintsSz( wx.DefaultSize, wx.DefaultSize )
+        vbox = wx.BoxSizer(wx.VERTICAL)
+        toolbar = wx.ToolBar(self, -1, style=wx.TB_HORIZONTAL | wx.NO_BORDER)
         self.bSizer = wx.BoxSizer( wx.VERTICAL )
-        self.panel = wx.Panel(self, wx.ID_ANY, wx.DefaultPosition, wx.Size(500, 100), wx.TAB_TRAVERSAL)
+        # self.panel = wx.Panel(self, wx.ID_ANY, wx.DefaultPosition, wx.Size(500, 100), wx.TAB_TRAVERSAL)
+        self.panel = PanelWelcome(self)
         self.bSizer.Add( self.panel, 1, wx.EXPAND |wx.ALL, 5 )
 
         self._ribbon = RB.RibbonBar(self.panel, wx.ID_ANY, agwStyle=RB.RIBBON_BAR_DEFAULT_STYLE|RB.RIBBON_BAR_SHOW_PANEL_EXT_BUTTONS)
-        # self.panelchanging = wx.Panel(self, wx.ID_ANY, wx.DefaultPosition, wx.DefaultSize, wx.TAB_TRAVERSAL)
 
-        # self.bSizer.Add( self._ribbon, 0, wx.ALL, 5)
-        # self.bSizer.Add( self.panelchanging, 1, wx.EXPAND |wx.ALL, 5 )
+        self.paneleuropean = PanelEuropean(self)
+        self.bSizer.Add( self.paneleuropean, 1, wx.EXPAND |wx.ALL, 5 )
+
+        self._ribbon = RB.RibbonBar(self.paneleuropean, wx.ID_ANY, agwStyle=RB.RIBBON_BAR_DEFAULT_STYLE|RB.RIBBON_BAR_SHOW_PANEL_EXT_BUTTONS)
+        self.paneleuropean.Hide()
 
 
         self._bitmap_creation_dc = wx.MemoryDC()
