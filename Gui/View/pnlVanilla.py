@@ -2,6 +2,7 @@ __author__ = 'Mario'
 
 import wx
 import wx.xrc
+from Engine_Vanilla import Vanilla
 
 ###########################################################################
 ## Class MainPanel
@@ -39,6 +40,16 @@ class PanelVanilla ( wx.Panel ):
 
         self.VolatilityText = wx.StaticText(self, -1, 'Input Volatility', pos = wx.Point(125, 142))
 
+        self.Dividend = wx.TextCtrl(self, wx.ID_ANY, wx.EmptyString, wx.DefaultPosition, wx.DefaultSize, 0)
+        txtCtrlSizer.Add(self.Dividend, 0, wx.ALL, 5)
+
+        self.DividendText = wx.StaticText(self, -1, 'Dividend (0 if None)', pos = wx.Point(125, 174))
+
+        Choices = ['Call', 'Put']
+        self.ChoiceBox = wx.Choice(self, wx.ID_ANY, wx.DefaultPosition, wx.DefaultSize, Choices, 0)
+        # self.ChoiceBox.SetSelection(0)
+        txtCtrlSizer.Add(self.ChoiceBox, 0, wx.ALL, 5)
+
         buttonSizer = wx.BoxSizer( wx.HORIZONTAL )
 
         self.computeButton = wx.Button( self, wx.ID_ANY, u"Compute", wx.DefaultPosition, wx.DefaultSize, 0 )
@@ -59,12 +70,16 @@ class PanelVanilla ( wx.Panel ):
         self.Layout()
 
     def OnCompute(self, event):
-        stockPrice = self.StockPrice.GetValue()
-        optionStrike = self.OptionPrice.GetValue()
-        optionYears = self.OptionYears.GetValue()
-        Riskfree = self.Riskfree.GetValue()
-        Volatility = self.Volatility.GetValue()
-        # print(stockPrice, optionStrike, optionYears, Riskfree, Volatility)
+        S = self.StockPrice.GetValue()
+        K = self.OptionPrice.GetValue()
+        T = self.OptionYears.GetValue()
+        r = self.Riskfree.GetValue()
+        v = self.Volatility.GetValue()
+        div = self.Dividend.GetValue()
+        flag = 'c' if self.ChoiceBox.GetString(self.ChoiceBox.GetCurrentSelection()) == 'Call' else 'p'
+        results = Vanilla(flag,S,K,r,v,T,div)
+        print(results.GetValue())
+        print(S,K,T,r,v, div, flag)
         #
 
     def OnClear(self, event):
@@ -73,6 +88,8 @@ class PanelVanilla ( wx.Panel ):
         self.OptionYears.Clear()
         self.Riskfree.Clear()
         self.Volatility.Clear()
+        self.Dividend.Clear()
+        self.ChoiceBox.Clear()
         # pass
 
     def __del__( self ):

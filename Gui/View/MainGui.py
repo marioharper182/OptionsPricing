@@ -51,6 +51,7 @@ class AppMain(wx.Frame):
                            aui.AuiPaneInfo().
                            Bottom().
                            Name("European").
+                           Caption("European Option").
                            CloseButton(False).
                            Maximize().
                            MaximizeButton(False).
@@ -65,6 +66,7 @@ class AppMain(wx.Frame):
                            aui.AuiPaneInfo().
                            Bottom().
                            Name("Asian").
+                           Caption("Asian Option").
                            CloseButton(False).
                            Maximize().
                            MaximizeButton(False).
@@ -79,6 +81,7 @@ class AppMain(wx.Frame):
                            aui.AuiPaneInfo().
                            Bottom().
                            Name("Lookback").
+                           Caption("European Lookback Option").
                            CloseButton(False).
                            Maximize().
                            MaximizeButton(False).
@@ -93,6 +96,7 @@ class AppMain(wx.Frame):
                            aui.AuiPaneInfo().
                            Bottom().
                            Name("Vanilla").
+                           Caption("BlackScholes European").
                            CloseButton(False).
                            Maximize().
                            MaximizeButton(False).
@@ -108,6 +112,7 @@ class AppMain(wx.Frame):
                            Bottom().
                            Layer(1).
                            Name("Welcome").
+                           Caption("Please Make A Selection").
                            Maximize().
                            CloseButton(False).
                            MaximizeButton(False).

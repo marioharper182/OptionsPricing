@@ -7,6 +7,8 @@ ID_European = wx.NewId()
 ID_Asian = wx.NewId()
 ID_Lookback = wx.NewId()
 ID_American = wx.NewId()
+ID_Implied = wx.NewId()
+
 def CreateBitmap(xpm):
 
     bmp = eval(xpm).Bitmap
@@ -36,6 +38,12 @@ class PanelButtons ( wx.Panel ):
 
         self.LookbackButton = wx.BitmapButton( self, ID_Lookback, CreateBitmap("LookBackOption"), wx.DefaultPosition, wx.DefaultSize, wx.BU_AUTODRAW )
         ButtonSizer.Add( self.LookbackButton, 0, wx.ALL, 5 )
+
+        self.AmericanButton = wx.BitmapButton( self, ID_American, CreateBitmap("AmericanOption"), wx.DefaultPosition, wx.DefaultSize, wx.BU_AUTODRAW)
+        ButtonSizer.Add( self.AmericanButton, 0, wx.ALL, 5)
+
+        self.ImpliedVolButton = wx.BitmapButton( self, ID_Implied, CreateBitmap("ImpliedVol"), wx.DefaultPosition, wx.DefaultSize, wx.BU_AUTODRAW)
+        ButtonSizer.Add( self.ImpliedVolButton, 0, wx.ALL, 5)
 
         self.SetSizer( ButtonSizer )
         self.Layout()
