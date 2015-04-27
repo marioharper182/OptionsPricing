@@ -4,14 +4,13 @@ from EuropeanGreeks import *
 from scipy.stats import norm
 import time
 from numba import *
-from numbapro import cuda
 
 class EuropeanLookback():
     def __init__(self, strike, t, expiry, spot, sigma, rate, dividend, alpha, dt):
 
         # Instantiate variables
         self.strike = strike
-        # self.t = t
+        self.t = t
         self.expiry = expiry
         self.tau = expiry - t
         self.spot = spot
@@ -190,8 +189,8 @@ class EuropeanLookback():
         tt = np.tile(np.array(time),(M,1)) # Create a matrix of time x M so we have time for every iteration
 
         ### Calculate the lookback option ###
-        assetpath1 = np.array(spot*np.exp((rate-.5*Vtn)*tt+np.sqrt(Vtn)*Wnew)) #European standard
-        assetpath2 = np.array(spot*np.exp((rate-.5*Vtn)*tt+np.sqrt(Vtn)*-Wnew)) #European standard
+        assetpath1 = np.array(spot*np.exp((rate-.5*Vtn)*tt+np.sqrt(Vtn)*Wnew)) #European standard Antithetic1
+        assetpath2 = np.array(spot*np.exp((rate-.5*Vtn)*tt+np.sqrt(Vtn)*-Wnew)) #European standard Antithetic2
 
         d1_St1 = EuroD1(assetpath1, strike, rate, self.dividend, sigma, self.tau)
         d1_St2 = EuroD1(assetpath2, strike, rate, self.dividend, sigma, self.tau)
@@ -212,14 +211,15 @@ class EuropeanLookback():
         Vt = np.delete(np.c_[Vt+tempA, Vtn],-1,1)
         # Vtn = np.c_[Vtn, Vtn[:, -1]]
 
-        cv1, cv2, cv3 = 0,0,0
-        # for i in range(len(St1n[0])):
+        cv1, cv2, cv3 = 0,0,0 # PreAllocate the ControlVariates
+        # Define ControlVariate Params
         cv1 = cv1 + delta1*(St1n - St1*self.erddt) + delta2*(St2n - St2*self.erddt)
         cv2 = cv2 + gamma1*((St1n-St1)**2 - St1**2 * (self.egam1*np.exp(Vt*self.dt)+self.egam2)) + \
               gamma2*((St2n-St2)**2 - St2**2*(self.egam1*np.exp(Vt*self.dt)+self.egam2))
         cv3 = cv3 + vega1*((Vtn-Vt)-(Vt*self.eveg1+self.eveg2-Vt)) + \
               vega2*((Vtn-Vt)-(Vt*self.eveg1+self.eveg2-Vt))
 
+        # Assign Antithetics Maxima's
         max_vals1 = np.array([max(assetpath1[i]) for i in range(0 , len(assetpath1))])
         max_vals2 = np.array([max(assetpath1[i]) for i in range(0 , len(assetpath1))])
         CT = .5*((max_vals1 - self.strike) + (max_vals2 - self.strike) +
