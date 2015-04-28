@@ -1,35 +1,32 @@
 __author__ = 'Mario'
 
 import numpy as np
-from EuropeanGreeks import *
 from scipy.stats import norm
-from numba import *
 
 class EuropeanLookback():
-    def __init__(self, strike, expiry, spot, sigma, rate, dividend, alpha, dt, N, M, Vbar):
+    def __init__(self, strike, expiry, spot, sigma, rate, dividend, M, flag, N=100, Vbar=.12, alpha=.69):
 
         # Instantiate variables
-        self.strike = strike
-        self.expiry = expiry
-        self.spot = spot
-        self.sigma = sigma
-        self.sigma2 = sigma2 = sigma**2
-        self.rate = rate
-        self.dividend = dividend
-        self.alpha = alpha
-        self.dt = expiry/N
+        self.strike = float(strike)
+        self.expiry = float(expiry)
+        self.spot = float(spot)
+        self.sigma = float(sigma)
+        self.sigma2 = sigma2 = float(sigma)*float(sigma)
+        self.rate = float(rate)
+        self.dividend = float(dividend)
+        self.alpha = float(alpha)
+        self.dt = float(expiry)/float(N)
 
         self.Vbar = Vbar
         self.xi = xi = .025
 
         self.N = N
-        self.M = M
+        self.M = int(M)
 
         self.beta1 = -.88
         self.beta2 = -.42
         self.beta3 = -.0003
 
-        self.sig2 = self.sigma**2
         self.alphadt = self.alpha*self.dt
         self.xisdt = self.xi*np.sqrt(self.dt)
         self.erddt = np.exp((self.rate-self.dividend)*self.dt)
@@ -41,10 +38,10 @@ class EuropeanLookback():
 
         self.VectorizedMonteCarlo(float(spot), float(rate), float(sigma),
                                   float(expiry), int(N), int(M), float(strike),
-                                  float(sigma2))
+                                  float(sigma2), flag)
 
 
-    def VectorizedMonteCarlo(self, spot, rate, sigma, expiry, N, M, strike, sigma2):
+    def VectorizedMonteCarlo(self, spot, rate, sigma, expiry, N, M, strike, sigma2, flag):
         # Initialize the matrices
         newdt = float(expiry)/float(N) # Get the dt for the Weiner process
         dW = np.sqrt(newdt)*np.random.normal(0,1,(M,N-1)) # Create the brownian motion
@@ -100,15 +97,18 @@ class EuropeanLookback():
         sum_CT2 = sum([i**2 for i in CT])
 
         call_value = sum_CT/self.M *np.exp(-self.rate*self.expiry)
-        SD = np.sqrt((sum_CT2 - sum_CT*sum_CT/self.M)*np.exp(-2*self.rate*self.expiry)/(self.M-1))
-        SE = SD/np.sqrt(self.M)
-        print('This is the CV method with Stochastic Volatility: ', call_value)
-        print(SD, SE)
+        self.SD = np.sqrt((sum_CT2 - sum_CT*sum_CT/self.M)*np.exp(-2*self.rate*self.expiry)/(self.M-1))
+        self.SE = self.SD/np.sqrt(self.M)
+        # print('This is the CV method with Stochastic Volatility: ', call_value)
+        # print(self.SD, self.SE)
 
-        option_val = np.array([max(i-strike,0) for i in np.array(max_vals1)])
+        if flag == 'c':
+            option_val = np.array([max(i-strike,0) for i in np.array(max_vals1)])
+        else:
+            option_val = np.array([max(strike-i,0) for i in np.array(max_vals1)])
         call_val = np.mean(option_val)
-        present_val = np.exp(-rate*expiry)*call_val
-        print('This is the matrix, naive monte carlo: ',present_val)
+        self.present_val = np.exp(-rate*expiry)*call_val
+        # print('This is the matrix, naive monte carlo: ',present_val)
 
     def SetVbar(self, Vbar):
         self.Vbar = Vbar
@@ -139,6 +139,44 @@ class EuropeanLookback():
 
         return vardic
 
+    def GetPrice(self):
+        return [self.present_val, self.SD, self.SE]
+
+
+def EuroDelta(d1):
+    # Delta is the price sensitivity
+    Delta = norm.cdf(d1)
+    return Delta
+
+def EuroGamma(d1, spot, sigma, tau):
+    # Gamma is a second order time-price sensitivity
+    Gamma = norm.ppf(norm.cdf(d1)) / (spot*sigma*np.sqrt(tau))
+    return Gamma
+
+def EuroTheta(d1, d2, rate, strike, tau, sigma, spot):
+    # Theta is the time sensitivity
+    Theta = -rate*strike*np.exp(-rate*tau) * norm.cdf(d2) - \
+            (sigma*spot*norm.ppf(norm.cdf(d1))/(2*tau))
+    return Theta
+
+def EuroRho(d2, tau, strike, rate):
+    # Rho is the interest rate sensitivity
+    Rho = tau*strike*np.exp(-rate*tau) * norm.cdf(d2)
+    return Rho
+
+def EuroVega(d1, tau, spot):
+    # Vega is a volatility sensitivity
+    Vega = np.sqrt(tau)*spot*norm.cdf(d1)
+    return Vega
+
+def EuroD1(spot, strike, rate, dividend, sigma, tau):
+    d1 = ((np.log(spot/strike) + (rate - dividend + 1/2 *
+                                 sigma**2)*tau))/ (np.sqrt(tau))
+    return d1
+
+def EuroD2(d1, sigma, tau):
+    d2 = d1 - sigma * np.sqrt(tau)
+    return d2
 ### FOR TESTING PURPOSES ONLY ###
 #
 # def main():

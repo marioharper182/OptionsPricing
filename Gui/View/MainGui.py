@@ -259,6 +259,10 @@ class AppMain(wx.Frame):
 
     def OnLookbackButtonClick(self, event):
         print('Switched to European Lookback Option Pricing')
+        print('For your convenience, we have taken the liberty of assigning '
+              'the parameters (alpha, chi, average Volatility of Volatility, '
+              'and preset the number of fixings to be 100 until expiry. '
+              'To change these, please toggle the "Advanced Settings" option.')
         self.HidePanes()
         LookbackPane = self.m_mgr.GetPane(self.PanelLookback)
         LookbackPane.Show(show=True).Maximize()

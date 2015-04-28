@@ -2,15 +2,17 @@ __author__ = 'Mario'
 
 import wx
 import wx.xrc
+from Engine_EuropeanLookback import EuropeanLookback
 
 ###########################################################################
 ## Class MainPanel
 ###########################################################################
 
+
 class PanelLookback ( wx.Panel ):
 
     def __init__( self, parent ):
-        wx.Panel.__init__ ( self, parent, id = wx.ID_ANY, pos = wx.DefaultPosition, size = wx.Size( 500,300 ), style = wx.TAB_TRAVERSAL )
+        wx.Panel.__init__ ( self, parent, id = wx.ID_ANY, pos = wx.DefaultPosition, size = wx.Size( 500,400 ), style = wx.TAB_TRAVERSAL )
 
         txtCtrlSizer = wx.BoxSizer( wx.VERTICAL )
 
@@ -27,7 +29,7 @@ class PanelLookback ( wx.Panel ):
         self.OptionYears = wx.TextCtrl( self, wx.ID_ANY, wx.EmptyString, wx.DefaultPosition, wx.DefaultSize, 0 )
         txtCtrlSizer.Add( self.OptionYears, 0, wx.ALL, 5 )
 
-        self.OptionYearsText = wx.StaticText(self, -1, 'Option Time Length', pos = wx.Point(125, 75))
+        self.OptionYearsText = wx.StaticText(self, -1, 'Years to Termination', pos = wx.Point(125, 75))
 
         self.Riskfree = wx.TextCtrl( self, wx.ID_ANY, wx.EmptyString, wx.DefaultPosition, wx.DefaultSize, 0 )
         txtCtrlSizer.Add( self.Riskfree, 0, wx.ALL, 5 )
@@ -38,6 +40,31 @@ class PanelLookback ( wx.Panel ):
         txtCtrlSizer.Add( self.Volatility, 0, wx.ALL, 5 )
 
         self.VolatilityText = wx.StaticText(self, -1, 'Input Volatility', pos = wx.Point(125, 142))
+
+        # self.Fixings = wx.TextCtrl(self, wx.ID_ANY, wx.EmptyString, wx.DefaultPosition, wx.DefaultSize, 0)
+        # txtCtrlSizer.Add(self.Fixings, 0, wx.ALL, 5)
+        #
+        # self.FixingsText = wx.StaticText(self, -1, 'Number of Price Fixings', pos = wx.Point(125, 174))
+
+        self.Iterations = wx.TextCtrl(self, wx.ID_ANY, wx.EmptyString, wx.DefaultPosition, wx.DefaultSize, 0)
+        txtCtrlSizer.Add(self.Iterations, 0, wx.ALL, 5)
+
+        self.IterationsText = wx.StaticText(self, -1, 'Number of Iterations', pos = wx.Point(125, 174))
+
+        self.Dividend = wx.TextCtrl(self, wx.ID_ANY, wx.EmptyString, wx.DefaultPosition, wx.DefaultSize, 0)
+        txtCtrlSizer.Add(self.Dividend, 0, wx.ALL, 5)
+
+        self.DividendText = wx.StaticText(self, -1, 'Dividend (0 if None)', pos = wx.Point(125, 206))
+
+        # self.AveVol = wx.TextCtrl(self, wx.ID_ANY, wx.EmptyString, wx.DefaultPosition, wx.DefaultSize, 0)
+        # txtCtrlSizer.Add(self.AveVol, 0, wx.ALL, 5)
+        #
+        # self.DividendText = wx.StaticText(self, -1, 'Average Volatility of Volatility (If blank, .12 is assumed)', pos = wx.Point(125, 270))
+
+        Choices = ['Call', 'Put']
+        self.ChoiceBox = wx.Choice(self, wx.ID_ANY, wx.DefaultPosition, wx.DefaultSize, Choices, 0)
+        # self.ChoiceBox.SetSelection(0)
+        txtCtrlSizer.Add(self.ChoiceBox, 0, wx.ALL, 5)
 
         buttonSizer = wx.BoxSizer( wx.HORIZONTAL )
 
@@ -59,11 +86,20 @@ class PanelLookback ( wx.Panel ):
         self.Layout()
 
     def OnCompute(self, event):
-        stockPrice = self.StockPrice.GetValue()
-        optionStrike = self.OptionPrice.GetValue()
-        optionYears = self.OptionYears.GetValue()
-        Riskfree = self.Riskfree.GetValue()
-        Volatility = self.Volatility.GetValue()
+        spot = self.StockPrice.GetValue()
+        strike = self.OptionPrice.GetValue()
+        expiry = self.OptionYears.GetValue()
+        rate = self.Riskfree.GetValue()
+        sigma = self.Volatility.GetValue()
+        # N = self.Fixings.GetValue()
+        M = self.Iterations.GetValue()
+        dividend = self.Dividend.GetValue()
+        flag = 'c' if self.ChoiceBox.GetString(self.ChoiceBox.GetCurrentSelection()) == 'Call' else 'p'
+        EuroOption = EuropeanLookback(strike, expiry, spot, sigma, rate, dividend, M, flag)
+        result = EuroOption.GetPrice()
+
+        print( 'The MonteCarlo Price of the European Option is:', result[0])
+        print( 'The associated standard deviation and standard errors are:', result[1], result[2])
         # print(stockPrice, optionStrike, optionYears, Riskfree, Volatility)
         #
 
