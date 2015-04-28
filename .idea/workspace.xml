@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="106cf297-0da5-4ba7-a0f9-d376e79b200f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Gui/View/Engine_American.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gui/View/pnlAmerican.py" afterPath="$PROJECT_DIR$/Gui/View/pnlAmerican.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Gui/View/Engine_Asian.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gui/View/pnlAsian.py" afterPath="$PROJECT_DIR$/Gui/View/pnlAsian.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="optionspricing.iws" />
@@ -43,7 +43,7 @@
               <entry file="file://$PROJECT_DIR$/Gui/View/Engine_European.py">
                 <provider selected="true" editor-type-id="text-editor">
                   <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1056">
-                    <caret line="30" column="55" selection-start-line="30" selection-start-column="55" selection-end-line="30" selection-end-column="55" />
+                    <caret line="0" column="25" selection-start-line="0" selection-start-column="25" selection-end-line="0" selection-end-column="25" />
                     <folding>
                       <element signature="e#27#45#0" expanded="true" />
                     </folding>
@@ -73,12 +73,24 @@
                 </provider>
               </entry>
             </file>
-            <file leaf-file-name="Engine_American.py" pinned="false" current-in-tab="true">
+            <file leaf-file-name="Engine_American.py" pinned="false" current-in-tab="false">
               <entry file="file://$PROJECT_DIR$/Gui/View/Engine_American.py">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state vertical-scroll-proportion="0.15117015" vertical-offset="3" max-vertical-offset="1584">
+                  <state vertical-scroll-proportion="0.0" vertical-offset="3" max-vertical-offset="1584">
                     <caret line="11" column="29" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
                     <folding />
+                  </state>
+                </provider>
+              </entry>
+            </file>
+            <file leaf-file-name="Engine_Asian.py" pinned="false" current-in-tab="true">
+              <entry file="file://$PROJECT_DIR$/Gui/View/Engine_Asian.py">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state vertical-scroll-proportion="0.25255102" vertical-offset="0" max-vertical-offset="1568">
+                    <caret line="18" column="45" selection-start-line="18" selection-start-column="45" selection-end-line="18" selection-end-column="45" />
+                    <folding>
+                      <element signature="e#27#45#0" expanded="true" />
+                    </folding>
                   </state>
                 </provider>
               </entry>
@@ -147,8 +159,20 @@
       <file leaf-file-name="pnlEuropean.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Gui/View/pnlEuropean.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1711" max-vertical-offset="2442">
-              <caret line="94" column="0" selection-start-line="94" selection-start-column="0" selection-end-line="101" selection-end-column="30" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="836" max-vertical-offset="2442">
+              <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="55" selection-end-column="54" />
+              <folding>
+                <element signature="e#22#31#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pnlAsian.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Gui/View/pnlAsian.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.7004831" vertical-offset="1491" max-vertical-offset="2442">
+              <caret line="48" column="55" selection-start-line="48" selection-start-column="55" selection-end-line="48" selection-end-column="55" />
               <folding>
                 <element signature="e#22#31#0" expanded="true" />
               </folding>
@@ -168,11 +192,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pnlAmerican.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="pnlAmerican.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Gui/View/pnlAmerican.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="3.3301127" vertical-offset="0" max-vertical-offset="2288">
-              <caret line="94" column="30" selection-start-line="94" selection-start-column="30" selection-end-line="94" selection-end-column="30" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2288">
+              <caret line="18" column="57" selection-start-line="18" selection-start-column="57" selection-end-line="18" selection-end-column="57" />
               <folding>
                 <element signature="e#22#31#0" expanded="true" />
               </folding>
@@ -217,7 +241,6 @@
         <option value="$PROJECT_DIR$/Gui/Controller/ColorInformation.py" />
         <option value="$PROJECT_DIR$/Gui/View/ApplicationFrame.py" />
         <option value="$PROJECT_DIR$/Gui/View/pnlWelcome.py" />
-        <option value="$PROJECT_DIR$/Gui/View/pnlAsian.py" />
         <option value="$PROJECT_DIR$/Gui/View/Engine_Vanilla.py" />
         <option value="$PROJECT_DIR$/Gui/Images/title_icons.py" />
         <option value="$PROJECT_DIR$/Gui/View/title_icons.py" />
@@ -235,6 +258,8 @@
         <option value="$PROJECT_DIR$/Gui/View/pnlImplied.py" />
         <option value="$PROJECT_DIR$/Gui/View/pnlAmerican.py" />
         <option value="$PROJECT_DIR$/Gui/View/Engine_American.py" />
+        <option value="$PROJECT_DIR$/Gui/View/Engine_Asian.py" />
+        <option value="$PROJECT_DIR$/Gui/View/pnlAsian.py" />
       </list>
     </option>
   </component>
@@ -657,7 +682,7 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3291866" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3291866" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.37894738" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.37894738" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -728,13 +753,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Accelerate/blackscholes_numba.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1050" max-vertical-offset="2090">
-          <caret line="69" column="70" selection-start-line="69" selection-start-column="70" selection-end-line="69" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/PythonEngine/EuropeanFixedStrike.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="100">
@@ -1029,16 +1047,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Gui/View/pnlAsian.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1848">
-          <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
-          <folding>
-            <element signature="e#22#31#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Gui/View/title_icons.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="3405" max-vertical-offset="4444">
@@ -1100,16 +1108,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Gui/View/Engine_European.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1056">
-          <caret line="30" column="55" selection-start-line="30" selection-start-column="55" selection-end-line="30" selection-end-column="55" />
-          <folding>
-            <element signature="e#27#45#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Gui/View/Engine_EuropeanLookback.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="132" max-vertical-offset="4708">
@@ -1138,16 +1136,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Gui/View/pnlEuropean.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1711" max-vertical-offset="2442">
-          <caret line="94" column="0" selection-start-line="94" selection-start-column="0" selection-end-line="101" selection-end-column="30" />
-          <folding>
-            <element signature="e#22#31#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Gui/View/pnlLookback.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="2019" max-vertical-offset="2706">
@@ -1168,6 +1156,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Gui/View/Engine_American.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="3" max-vertical-offset="1584">
+          <caret line="11" column="29" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gui/View/pnlAmerican.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2288">
+          <caret line="18" column="57" selection-start-line="18" selection-start-column="57" selection-end-line="18" selection-end-column="57" />
+          <folding>
+            <element signature="e#22#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gui/View/Engine_European.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1056">
+          <caret line="0" column="25" selection-start-line="0" selection-start-column="25" selection-end-line="0" selection-end-column="25" />
+          <folding>
+            <element signature="e#27#45#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gui/View/Engine_Asian.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.25255102" vertical-offset="0" max-vertical-offset="1568">
+          <caret line="18" column="45" selection-start-line="18" selection-start-column="45" selection-end-line="18" selection-end-column="45" />
+          <folding>
+            <element signature="e#27#45#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Gui/View/MainGui.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-3.7931035" vertical-offset="3234" max-vertical-offset="6490">
@@ -1180,21 +1206,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Gui/View/pnlAmerican.py">
+    <entry file="file://$PROJECT_DIR$/Gui/View/pnlEuropean.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="3.3301127" vertical-offset="0" max-vertical-offset="2288">
-          <caret line="94" column="30" selection-start-line="94" selection-start-column="30" selection-end-line="94" selection-end-column="30" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="836" max-vertical-offset="2442">
+          <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="55" selection-end-column="54" />
           <folding>
             <element signature="e#22#31#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Gui/View/Engine_American.py">
+    <entry file="file://$PROJECT_DIR$/Gui/View/pnlAsian.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.15117015" vertical-offset="3" max-vertical-offset="1584">
-          <caret line="11" column="29" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
-          <folding />
+        <state vertical-scroll-proportion="-0.7004831" vertical-offset="1491" max-vertical-offset="2442">
+          <caret line="48" column="55" selection-start-line="48" selection-start-column="55" selection-end-line="48" selection-end-column="55" />
+          <folding>
+            <element signature="e#22#31#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
