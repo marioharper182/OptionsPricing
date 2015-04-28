@@ -1,5 +1,3 @@
-__author__ = 'HarperMain'
-
 # from mibian import BS, Me
 from math import log, e
 from scipy.stats import norm
