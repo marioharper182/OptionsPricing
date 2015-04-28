@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="106cf297-0da5-4ba7-a0f9-d376e79b200f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Gui/View/Engine_Asian.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gui/View/pnlAsian.py" afterPath="$PROJECT_DIR$/Gui/View/pnlAsian.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gui/View/Engine_Implied.py" afterPath="$PROJECT_DIR$/Gui/View/Engine_Implied.py" />
     </list>
     <ignored path="optionspricing.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -63,11 +61,23 @@
                 </provider>
               </entry>
             </file>
-            <file leaf-file-name="Engine_Implied.py" pinned="false" current-in-tab="false">
+            <file leaf-file-name="Engine_Implied.py" pinned="false" current-in-tab="true">
               <entry file="file://$PROJECT_DIR$/Gui/View/Engine_Implied.py">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="704">
-                    <caret line="23" column="44" selection-start-line="23" selection-start-column="44" selection-end-line="23" selection-end-column="44" />
+                  <state vertical-scroll-proportion="0.39285713" vertical-offset="0" max-vertical-offset="2552">
+                    <caret line="28" column="9" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
+                    <folding>
+                      <element signature="e#55#78#0" expanded="true" />
+                    </folding>
+                  </state>
+                </provider>
+              </entry>
+            </file>
+            <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
+              <entry file="file://E:/SSD_WinProgramFiles/Anaconda2/Lib/site-packages/mibian/__init__.py">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="12276">
+                    <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="8" selection-end-column="32" />
                     <folding />
                   </state>
                 </provider>
@@ -83,10 +93,10 @@
                 </provider>
               </entry>
             </file>
-            <file leaf-file-name="Engine_Asian.py" pinned="false" current-in-tab="true">
+            <file leaf-file-name="Engine_Asian.py" pinned="false" current-in-tab="false">
               <entry file="file://$PROJECT_DIR$/Gui/View/Engine_Asian.py">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state vertical-scroll-proportion="0.25255102" vertical-offset="0" max-vertical-offset="1568">
+                  <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1056">
                     <caret line="18" column="45" selection-start-line="18" selection-start-column="45" selection-end-line="18" selection-end-column="45" />
                     <folding>
                       <element signature="e#27#45#0" expanded="true" />
@@ -171,8 +181,8 @@
       <file leaf-file-name="pnlAsian.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Gui/View/pnlAsian.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.7004831" vertical-offset="1491" max-vertical-offset="2442">
-              <caret line="48" column="55" selection-start-line="48" selection-start-column="55" selection-end-line="48" selection-end-column="55" />
+            <state vertical-scroll-proportion="0.61030596" vertical-offset="1491" max-vertical-offset="2442">
+              <caret line="85" column="69" selection-start-line="85" selection-start-column="69" selection-end-line="85" selection-end-column="69" />
               <folding>
                 <element signature="e#22#31#0" expanded="true" />
               </folding>
@@ -252,7 +262,6 @@
         <option value="$PROJECT_DIR$/PythonEngine/EuropeanFixedStrike.py" />
         <option value="$PROJECT_DIR$/Gui/View/Engine_EuropeanLookback.py" />
         <option value="$PROJECT_DIR$/Gui/View/MainGui.py" />
-        <option value="$PROJECT_DIR$/Gui/View/Engine_Implied.py" />
         <option value="$PROJECT_DIR$/Gui/View/pnlEuropean.py" />
         <option value="$PROJECT_DIR$/Gui/View/pnlLookback.py" />
         <option value="$PROJECT_DIR$/Gui/View/pnlImplied.py" />
@@ -260,6 +269,7 @@
         <option value="$PROJECT_DIR$/Gui/View/Engine_American.py" />
         <option value="$PROJECT_DIR$/Gui/View/Engine_Asian.py" />
         <option value="$PROJECT_DIR$/Gui/View/pnlAsian.py" />
+        <option value="$PROJECT_DIR$/Gui/View/Engine_Implied.py" />
       </list>
     </option>
   </component>
@@ -682,7 +692,7 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3291866" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3291866" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.37894738" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.37894738" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -753,21 +763,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/PythonEngine/EuropeanFixedStrike.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="100">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#21#39#0" expanded="true" />
-            <element signature="e#10767#10783#0" expanded="false" />
-            <element signature="e#10818#10830#0" expanded="false" />
-            <element signature="e#10863#10873#0" expanded="false" />
-            <element signature="e#10906#10916#0" expanded="false" />
-            <element signature="e#10954#11393#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Accelerate/blackscholes.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="830" max-vertical-offset="1870">
@@ -1118,14 +1113,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Gui/View/Engine_Implied.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="704">
-          <caret line="23" column="44" selection-start-line="23" selection-start-column="44" selection-end-line="23" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Gui/View/pnlVanilla.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1535" max-vertical-offset="2222">
@@ -1186,7 +1173,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Gui/View/Engine_Asian.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.25255102" vertical-offset="0" max-vertical-offset="1568">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1056">
           <caret line="18" column="45" selection-start-line="18" selection-start-column="45" selection-end-line="18" selection-end-column="45" />
           <folding>
             <element signature="e#27#45#0" expanded="true" />
@@ -1216,12 +1203,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://E:/SSD_WinProgramFiles/Anaconda2/Lib/site-packages/mibian/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="12276">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="8" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Gui/View/pnlAsian.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.7004831" vertical-offset="1491" max-vertical-offset="2442">
-          <caret line="48" column="55" selection-start-line="48" selection-start-column="55" selection-end-line="48" selection-end-column="55" />
+        <state vertical-scroll-proportion="0.61030596" vertical-offset="1491" max-vertical-offset="2442">
+          <caret line="85" column="69" selection-start-line="85" selection-start-column="69" selection-end-line="85" selection-end-column="69" />
           <folding>
             <element signature="e#22#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gui/View/Engine_Implied.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.39285713" vertical-offset="0" max-vertical-offset="2552">
+          <caret line="28" column="9" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
+          <folding>
+            <element signature="e#55#78#0" expanded="true" />
           </folding>
         </state>
       </provider>
