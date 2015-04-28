@@ -78,8 +78,8 @@ class PanelVanilla ( wx.Panel ):
         div = self.Dividend.GetValue()
         flag = 'c' if self.ChoiceBox.GetString(self.ChoiceBox.GetCurrentSelection()) == 'Call' else 'p'
         results = Vanilla(flag,S,K,r,v,T,div)
-        print(results.GetValue())
-        print(S,K,T,r,v, div, flag)
+        print "The value of this option by BlackScholes is:", results.GetValue()
+        # print(S,K,T,r,v, div, flag)
         #
 
     def OnClear(self, event):

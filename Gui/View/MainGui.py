@@ -10,11 +10,12 @@ from pnlButtons import PanelButtons
 from pnlVanilla import PanelVanilla
 from pnlAsian import PanelAsian
 from pnlLookback import PanelLookback
+from pnlConsole import consoleOutput
 
 class AppMain(wx.Frame):
 
     def __init__( self, parent ):
-        wx.Frame.__init__ ( self, parent, id = wx.ID_ANY, title = wx.EmptyString, pos = wx.DefaultPosition, size = wx.Size( 500,550 ), style = wx.DEFAULT_FRAME_STYLE|wx.TAB_TRAVERSAL )
+        wx.Frame.__init__ ( self, parent, id = wx.ID_ANY, title = wx.EmptyString, pos = wx.DefaultPosition, size = wx.Size( 500,650 ), style = wx.DEFAULT_FRAME_STYLE|wx.TAB_TRAVERSAL )
 
 
 
@@ -109,7 +110,6 @@ class AppMain(wx.Frame):
 
         self.m_mgr.AddPane(self.PanelWelcome,
                            aui.AuiPaneInfo().
-                           Bottom().
                            Layer(1).
                            Name("Welcome").
                            Caption("Please Make A Selection").
@@ -123,6 +123,19 @@ class AppMain(wx.Frame):
                            BestSize(wx.Size(500, 200))
                            )
 
+        self.m_mgr.AddPane(self.PanelConsole,
+                           aui.AuiPaneInfo().
+                           Bottom().
+                           Name("Console").
+                           Caption("Console Output").
+                           CloseButton(False).
+                           MaximizeButton(False).
+                           MinimizeButton(False).
+                           PinButton(False).
+                           Movable(False).
+                           Floatable(False).Show(show=True).
+                           Fixed()
+        )
         # self.Bind(wx.EVT_BUTTON, self.OnEuropeanButtonClick)
 
         self.m_mgr.Update()
@@ -133,7 +146,8 @@ class AppMain(wx.Frame):
         #                            style=wx.TAB_TRAVERSAL)
         self.PanelButton = PanelButtons(self)
         self.PanelWelcome = PanelWelcome(self)
-        # self.PanelWelcome.Hide()
+        self.PanelConsole = consoleOutput(self)
+
         self.PanelEuropean = PanelEuropean(self)
         self.PanelEuropean.Hide()
         self.PanelVanilla = PanelVanilla(self)
