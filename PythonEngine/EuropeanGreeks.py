@@ -52,8 +52,8 @@ def EuroVega(d1, tau, spot):
     return Vega
 
 def EuroD1(spot, strike, rate, dividend, sigma, tau):
-    d1 = (np.log(spot/strike) + (rate - dividend + 1/2 *
-                                 sigma**2)*tau) / (np.sqrt(tau))
+    d1 = ((np.log(spot/strike) + (rate - dividend + 1/2 *
+                                 sigma**2)*tau))/ (np.sqrt(tau))
     return d1
 
 def EuroD2(d1, sigma, tau):

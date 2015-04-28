@@ -12,7 +12,7 @@ class EuropeanLookback():
         self.strike = strike
         self.t = t
         self.expiry = expiry
-        self.tau = expiry - t
+        # self.tau = expiry - t
         self.spot = spot
         self.sigma = sigma
         self.sigma2 = sigma2 = sigma**2
@@ -187,6 +187,7 @@ class EuropeanLookback():
         Vt = self.sigma2
         Vtn = np.abs(Vt + self.alphadt*(self.Vbar - Vt) + self.xisdt*np.sqrt(Vt)*Wnew)
         tt = np.tile(np.array(time),(M,1)) # Create a matrix of time x M so we have time for every iteration
+        self.tau = expiry-1
 
         ### Calculate the lookback option ###
         assetpath1 = np.array(spot*np.exp((rate-.5*Vtn)*tt+np.sqrt(Vtn)*Wnew)) #European standard Antithetic1

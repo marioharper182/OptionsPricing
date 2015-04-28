@@ -38,8 +38,7 @@ class consoleOutput(wx.Panel):
         self.SetSizerAndFit(sizer)
 
     def onRightUp(self, event):
-        # self.log.PopupMenu(ConsoleContextMenu(self, event))
-        pass
+        self.log.PopupMenu(ConsoleContextMenu(self, event))
 
 class RedirectText(object):
 
@@ -87,3 +86,30 @@ class RedirectText(object):
 
     def flush(self):
         pass
+
+class ConsoleContextMenu(wx.Menu):
+    """
+    Context menu for when a user does a right click in the ConsoleOutput
+    """
+
+    def __init__(self, parent, event):
+        wx.Menu.__init__(self)
+        self.log = parent.log
+        self.parent = parent
+
+        mmi = wx.MenuItem(self, wx.NewId(), 'Clear Console')
+        self.AppendItem(mmi)
+        self.Bind(wx.EVT_MENU, self.OnClear, mmi)
+
+    def OnClear(self, event):
+        """
+        User clears the
+        """
+        self.log.Clear()
+        print 'RESET |'
+
+    def OnMinimize(self, e):
+        self.parent.Iconize()
+
+    def OnClose(self, e):
+        self.parent.Close()

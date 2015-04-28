@@ -57,6 +57,8 @@ class PanelButtons ( wx.Panel ):
         self.VanillaButton.Bind(wx.EVT_BUTTON, self.OnVanillaClick)
         self.AsianButton.Bind(wx.EVT_BUTTON, self.OnAsianClick)
         self.LookbackButton.Bind(wx.EVT_BUTTON, self.OnLookbackClick)
+        self.AmericanButton.Bind(wx.EVT_BUTTON, self.OnAmericanClick)
+        self.ImpliedVolButton.Bind(wx.EVT_BUTTON, self.OnImpliedClick)
 
     def __del__( self ):
         pass
@@ -72,3 +74,9 @@ class PanelButtons ( wx.Panel ):
 
     def OnLookbackClick(self, event):
         Publisher.sendMessage('lookback', event=event)
+
+    def OnAmericanClick(self, event):
+        Publisher.sendMessage('american', event=event)
+
+    def OnImpliedClick(self, event):
+        Publisher.sendMessage('implied', event=event)

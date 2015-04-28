@@ -2,9 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="106cf297-0da5-4ba7-a0f9-d376e79b200f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Gui/View/Engine_European.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Gui/View/pnlConsole.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Gui/View/Engine_EuropeanLookback.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Gui/View/pnlAmerican.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Gui/View/pnlImplied.py" />
+      <change type="DELETED" beforePath="E:\Projects\optionspricing\Gui\View\AmericanOption.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\Projects\optionspricing\Gui\View\AsianOption.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\Projects\optionspricing\Gui\View\EuropeanOption.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\Projects\optionspricing\Gui\View\LookBackOption.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\Projects\optionspricing\Gui\View\VanillaOption.png" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gui/View/Engine_European.py" afterPath="$PROJECT_DIR$/Gui/View/Engine_European.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PythonEngine/EuropeanFixedStrike.py" afterPath="$PROJECT_DIR$/PythonEngine/EuropeanFixedStrike.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PythonEngine/EuropeanGreeks.py" afterPath="$PROJECT_DIR$/PythonEngine/EuropeanGreeks.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gui/View/MainGui.py" afterPath="$PROJECT_DIR$/Gui/View/MainGui.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gui/View/pnlButtons.py" afterPath="$PROJECT_DIR$/Gui/View/pnlButtons.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gui/View/pnlConsole.py" afterPath="$PROJECT_DIR$/Gui/View/pnlConsole.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gui/View/pnlEuropean.py" afterPath="$PROJECT_DIR$/Gui/View/pnlEuropean.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gui/View/pnlVanilla.py" afterPath="$PROJECT_DIR$/Gui/View/pnlVanilla.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -41,11 +53,11 @@
                 </provider>
               </entry>
             </file>
-            <file leaf-file-name="Engine_European.py" pinned="false" current-in-tab="true">
+            <file leaf-file-name="Engine_European.py" pinned="false" current-in-tab="false">
               <entry file="file://$PROJECT_DIR$/Gui/View/Engine_European.py">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state vertical-scroll-proportion="0.36479592" vertical-offset="0" max-vertical-offset="1568">
-                    <caret line="26" column="38" selection-start-line="26" selection-start-column="38" selection-end-line="26" selection-end-column="38" />
+                  <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1056">
+                    <caret line="30" column="55" selection-start-line="30" selection-start-column="55" selection-end-line="30" selection-end-column="55" />
                     <folding>
                       <element signature="e#27#45#0" expanded="true" />
                     </folding>
@@ -53,18 +65,40 @@
                 </provider>
               </entry>
             </file>
+            <file leaf-file-name="Engine_EuropeanLookback.py" pinned="false" current-in-tab="true">
+              <entry file="file://$PROJECT_DIR$/Gui/View/Engine_EuropeanLookback.py">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state vertical-scroll-proportion="0.70153064" vertical-offset="0" max-vertical-offset="3872">
+                    <caret line="50" column="50" selection-start-line="50" selection-start-column="50" selection-end-line="50" selection-end-column="50" />
+                    <folding>
+                      <element signature="e#22#40#0" expanded="true" />
+                    </folding>
+                  </state>
+                </provider>
+              </entry>
+            </file>
+            <file leaf-file-name="EuropeanGreeks.py" pinned="false" current-in-tab="false">
+              <entry file="file://$PROJECT_DIR$/PythonEngine/EuropeanGreeks.py">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state vertical-scroll-proportion="0.0" vertical-offset="82" max-vertical-offset="1650">
+                    <caret line="49" column="38" selection-start-line="49" selection-start-column="37" selection-end-line="49" selection-end-column="38" />
+                    <folding />
+                  </state>
+                </provider>
+              </entry>
+            </file>
             <file leaf-file-name="EuropeanFixedStrike.py" pinned="false" current-in-tab="false">
               <entry file="file://$PROJECT_DIR$/PythonEngine/EuropeanFixedStrike.py">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state vertical-scroll-proportion="0.0" vertical-offset="792" max-vertical-offset="6270">
-                    <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="81" selection-end-column="21" />
+                  <state vertical-scroll-proportion="0.0" vertical-offset="578" max-vertical-offset="6292">
+                    <caret line="192" column="30" selection-start-line="192" selection-start-column="30" selection-end-line="192" selection-end-column="30" />
                     <folding>
                       <element signature="e#21#39#0" expanded="true" />
-                      <element signature="e#10737#10753#0" expanded="false" />
-                      <element signature="e#10788#10800#0" expanded="false" />
-                      <element signature="e#10833#10843#0" expanded="false" />
-                      <element signature="e#10876#10886#0" expanded="false" />
-                      <element signature="e#10924#11363#0" expanded="false" />
+                      <element signature="e#10767#10783#0" expanded="false" />
+                      <element signature="e#10818#10830#0" expanded="false" />
+                      <element signature="e#10863#10873#0" expanded="false" />
+                      <element signature="e#10906#10916#0" expanded="false" />
+                      <element signature="e#10954#11393#0" expanded="false" />
                     </folding>
                   </state>
                 </provider>
@@ -84,12 +118,12 @@
       <file leaf-file-name="MainGui.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Gui/View/MainGui.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="4364" max-vertical-offset="5170">
-              <caret line="21" column="29" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
+            <state vertical-scroll-proportion="62.96552" vertical-offset="3102" max-vertical-offset="6402">
+              <caret line="58" column="49" selection-start-line="58" selection-start-column="49" selection-end-line="58" selection-end-column="49" />
               <folding>
                 <element signature="e#27#36#0" expanded="true" />
-                <element signature="e#6605#6687#0" expanded="false" />
-                <element signature="e#6722#6726#0" expanded="false" />
+                <element signature="e#8135#8269#0" expanded="false" />
+                <element signature="e#8310#8392#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -98,8 +132,8 @@
       <file leaf-file-name="pnlConsole.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Gui/View/pnlConsole.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="985" max-vertical-offset="2068">
-              <caret line="14" column="78" selection-start-line="14" selection-start-column="78" selection-end-line="14" selection-end-column="78" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="528" max-vertical-offset="2640">
+              <caret line="18" column="56" selection-start-line="18" selection-start-column="56" selection-end-line="18" selection-end-column="56" />
               <folding>
                 <element signature="e#26#35#0" expanded="true" />
               </folding>
@@ -110,8 +144,8 @@
       <file leaf-file-name="pnlButtons.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Gui/View/pnlButtons.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="206" max-vertical-offset="1738">
-              <caret line="47" column="36" selection-start-line="47" selection-start-column="36" selection-end-line="47" selection-end-column="36" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="1327" max-vertical-offset="1914">
+              <caret line="78" column="0" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
               <folding>
                 <element signature="e#26#35#0" expanded="true" />
               </folding>
@@ -119,11 +153,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pnlVanilla.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="pnlVanilla.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Gui/View/pnlVanilla.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1469" max-vertical-offset="2222">
-              <caret line="72" column="38" selection-start-line="72" selection-start-column="38" selection-end-line="72" selection-end-column="38" />
+            <state vertical-scroll-proportion="0.61030596" vertical-offset="1337" max-vertical-offset="2222">
+              <caret line="78" column="8" selection-start-line="78" selection-start-column="8" selection-end-line="78" selection-end-column="103" />
               <folding>
                 <element signature="e#22#31#0" expanded="true" />
               </folding>
@@ -131,12 +165,36 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pnlEuropean.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="pnlEuropean.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Gui/View/pnlEuropean.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.28341386" vertical-offset="66" max-vertical-offset="1826">
-              <caret line="12" column="64" selection-start-line="12" selection-start-column="64" selection-end-line="12" selection-end-column="64" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2376">
+              <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pnlAmerican.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Gui/View/pnlAmerican.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2376">
+              <caret line="10" column="33" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
+              <folding>
+                <element signature="e#22#31#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pnlImplied.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Gui/View/pnlImplied.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="1293" max-vertical-offset="2376">
+              <caret line="10" column="32" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
+              <folding>
+                <element signature="e#22#31#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -163,28 +221,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pnlLookback.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Gui/View/pnlLookback.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="726" max-vertical-offset="1848">
-              <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
-              <folding>
-                <element signature="e#22#31#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pnlWelcome.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Gui/View/pnlWelcome.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="286">
-              <caret line="7" column="137" selection-start-line="7" selection-start-column="137" selection-end-line="7" selection-end-column="137" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="Git.Settings">
@@ -194,7 +230,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Accelerate/blackscholes_numba.py" />
-        <option value="$PROJECT_DIR$/PythonEngine/EuropeanGreeks.py" />
         <option value="$PROJECT_DIR$/Accelerate/blackscholes.py" />
         <option value="$PROJECT_DIR$/PythonEngine/EuropeanFixedStrikeCUDA.py" />
         <option value="$PROJECT_DIR$/Gui/View/Bitmaps.py" />
@@ -203,16 +238,20 @@
         <option value="$PROJECT_DIR$/Gui/View/pnlWelcome.py" />
         <option value="$PROJECT_DIR$/Gui/View/pnlAsian.py" />
         <option value="$PROJECT_DIR$/Gui/View/pnlLookback.py" />
-        <option value="$PROJECT_DIR$/PythonEngine/EuropeanFixedStrike.py" />
-        <option value="$PROJECT_DIR$/Gui/View/pnlEuropean.py" />
         <option value="$PROJECT_DIR$/Gui/View/Engine_Vanilla.py" />
         <option value="$PROJECT_DIR$/Gui/Images/title_icons.py" />
         <option value="$PROJECT_DIR$/Gui/View/title_icons.py" />
-        <option value="$PROJECT_DIR$/Gui/View/pnlButtons.py" />
-        <option value="$PROJECT_DIR$/Gui/View/pnlConsole.py" />
-        <option value="$PROJECT_DIR$/Gui/View/MainGui.py" />
         <option value="$PROJECT_DIR$/Gui/View/pnlVanilla.py" />
         <option value="$PROJECT_DIR$/Gui/View/Engine_European.py" />
+        <option value="$PROJECT_DIR$/Gui/View/pnlEuropean.py" />
+        <option value="$PROJECT_DIR$/Gui/View/pnlConsole.py" />
+        <option value="$PROJECT_DIR$/Gui/View/pnlAmerican.py" />
+        <option value="$PROJECT_DIR$/Gui/View/pnlImplied.py" />
+        <option value="$PROJECT_DIR$/Gui/View/pnlButtons.py" />
+        <option value="$PROJECT_DIR$/Gui/View/MainGui.py" />
+        <option value="$PROJECT_DIR$/PythonEngine/EuropeanGreeks.py" />
+        <option value="$PROJECT_DIR$/PythonEngine/EuropeanFixedStrike.py" />
+        <option value="$PROJECT_DIR$/Gui/View/Engine_EuropeanLookback.py" />
       </list>
     </option>
   </component>
@@ -350,7 +389,7 @@
       <recent name="E:\Projects\optionspricing\Gui\View" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.MainGui">
+  <component name="RunManager" selected="Python.EuropeanFixedStrike">
     <configuration default="false" name="ApplicationFrame" type="PythonConfigurationType" factoryName="Python" singleton="true" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -583,8 +622,8 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.MainGui" />
-        <item index="1" class="java.lang.String" itemvalue="Python.EuropeanFixedStrike" />
+        <item index="0" class="java.lang.String" itemvalue="Python.EuropeanFixedStrike" />
+        <item index="1" class="java.lang.String" itemvalue="Python.MainGui" />
         <item index="2" class="java.lang.String" itemvalue="Python.ApplicationFrame" />
         <item index="3" class="java.lang.String" itemvalue="Python.Main" />
         <item index="4" class="java.lang.String" itemvalue="Python.pnlGui" />
@@ -625,7 +664,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1176" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33014354" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -674,34 +713,24 @@
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
-          <url>file://$PROJECT_DIR$/PythonEngine/EuropeanFixedStrike.py</url>
-          <line>95</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="python-line">
-          <url>file://$PROJECT_DIR$/PythonEngine/EuropeanFixedStrike.py</url>
-          <line>233</line>
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="python-line">
-          <url>file://$PROJECT_DIR$/PythonEngine/EuropeanFixedStrike.py</url>
-          <line>188</line>
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="python-line">
-          <url>file://$PROJECT_DIR$/PythonEngine/EuropeanFixedStrike.py</url>
-          <line>224</line>
-          <option name="timeStamp" value="13" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="python-line">
-          <url>file://$PROJECT_DIR$/PythonEngine/EuropeanFixedStrike.py</url>
-          <line>191</line>
-          <option name="timeStamp" value="14" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/Gui/View/ApplicationFrame.py</url>
           <line>161</line>
           <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/PythonEngine/EuropeanFixedStrike.py</url>
+          <line>193</line>
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/PythonEngine/EuropeanFixedStrike.py</url>
+          <line>216</line>
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/PythonEngine/EuropeanFixedStrike.py</url>
+          <line>232</line>
+          <option name="timeStamp" value="28" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
@@ -711,15 +740,25 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="22" />
+      <option name="time" value="29" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Accelerate/blackscholes.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="830" max-vertical-offset="1870">
+          <caret line="70" column="23" selection-start-line="70" selection-start-column="23" selection-end-line="70" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#18#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Accelerate/blackscholes_cuda.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2816">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="1799" max-vertical-offset="2816">
+          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -732,15 +771,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/PythonEngine/EuropeanFixedStrike.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="748" max-vertical-offset="1166">
-          <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="100">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#21#39#0" expanded="true" />
-            <element signature="e#10737#10753#0" expanded="false" />
-            <element signature="e#10788#10800#0" expanded="false" />
-            <element signature="e#10833#10843#0" expanded="false" />
-            <element signature="e#10876#10886#0" expanded="false" />
-            <element signature="e#10924#11363#0" expanded="false" />
+            <element signature="e#10767#10783#0" expanded="false" />
+            <element signature="e#10818#10830#0" expanded="false" />
+            <element signature="e#10863#10873#0" expanded="false" />
+            <element signature="e#10906#10916#0" expanded="false" />
+            <element signature="e#10954#11393#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -775,11 +814,11 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#21#39#0" expanded="true" />
-            <element signature="e#10737#10753#0" expanded="false" />
-            <element signature="e#10788#10800#0" expanded="false" />
-            <element signature="e#10833#10843#0" expanded="false" />
-            <element signature="e#10876#10886#0" expanded="false" />
-            <element signature="e#10924#11363#0" expanded="false" />
+            <element signature="e#10767#10783#0" expanded="false" />
+            <element signature="e#10818#10830#0" expanded="false" />
+            <element signature="e#10863#10873#0" expanded="false" />
+            <element signature="e#10906#10916#0" expanded="false" />
+            <element signature="e#10954#11393#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -814,11 +853,11 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#21#39#0" expanded="true" />
-            <element signature="e#10737#10753#0" expanded="false" />
-            <element signature="e#10788#10800#0" expanded="false" />
-            <element signature="e#10833#10843#0" expanded="false" />
-            <element signature="e#10876#10886#0" expanded="false" />
-            <element signature="e#10924#11363#0" expanded="false" />
+            <element signature="e#10767#10783#0" expanded="false" />
+            <element signature="e#10818#10830#0" expanded="false" />
+            <element signature="e#10863#10873#0" expanded="false" />
+            <element signature="e#10906#10916#0" expanded="false" />
+            <element signature="e#10954#11393#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -853,50 +892,11 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#21#39#0" expanded="true" />
-            <element signature="e#10737#10753#0" expanded="false" />
-            <element signature="e#10788#10800#0" expanded="false" />
-            <element signature="e#10833#10843#0" expanded="false" />
-            <element signature="e#10876#10886#0" expanded="false" />
-            <element signature="e#10924#11363#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Accelerate/blackscholes.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="830" max-vertical-offset="1870">
-          <caret line="70" column="23" selection-start-line="70" selection-start-column="23" selection-end-line="70" selection-end-column="23" />
-          <folding>
-            <element signature="e#0#18#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Accelerate/blackscholes_cuda.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1799" max-vertical-offset="2816">
-          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Accelerate/blackscholes_numba.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1050" max-vertical-offset="2090">
-          <caret line="69" column="70" selection-start-line="69" selection-start-column="70" selection-end-line="69" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PythonEngine/EuropeanFixedStrike.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="100">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#21#39#0" expanded="true" />
-            <element signature="e#10737#10753#0" expanded="false" />
-            <element signature="e#10788#10800#0" expanded="false" />
-            <element signature="e#10833#10843#0" expanded="false" />
-            <element signature="e#10876#10886#0" expanded="false" />
-            <element signature="e#10924#11363#0" expanded="false" />
+            <element signature="e#10767#10783#0" expanded="false" />
+            <element signature="e#10818#10830#0" expanded="false" />
+            <element signature="e#10863#10873#0" expanded="false" />
+            <element signature="e#10906#10916#0" expanded="false" />
+            <element signature="e#10954#11393#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -960,13 +960,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="27663" max-vertical-offset="37825">
           <caret line="1642" column="0" selection-start-line="1642" selection-start-column="0" selection-end-line="1642" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PythonEngine/EuropeanGreeks.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="920" max-vertical-offset="1650">
-          <caret line="53" column="4" selection-start-line="53" selection-start-column="4" selection-end-line="53" selection-end-column="4" />
         </state>
       </provider>
     </entry>
@@ -1098,71 +1091,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Gui/View/pnlVanilla.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1469" max-vertical-offset="2222">
-          <caret line="72" column="38" selection-start-line="72" selection-start-column="38" selection-end-line="72" selection-end-column="38" />
-          <folding>
-            <element signature="e#22#31#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Gui/View/pnlButtons.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="206" max-vertical-offset="1738">
-          <caret line="47" column="36" selection-start-line="47" selection-start-column="36" selection-end-line="47" selection-end-column="36" />
-          <folding>
-            <element signature="e#26#35#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Gui/View/pnlConsole.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="985" max-vertical-offset="2068">
-          <caret line="14" column="78" selection-start-line="14" selection-start-column="78" selection-end-line="14" selection-end-column="78" />
-          <folding>
-            <element signature="e#26#35#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PythonEngine/EuropeanFixedStrike.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="792" max-vertical-offset="6270">
-          <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="81" selection-end-column="21" />
-          <folding>
-            <element signature="e#21#39#0" expanded="true" />
-            <element signature="e#10737#10753#0" expanded="false" />
-            <element signature="e#10788#10800#0" expanded="false" />
-            <element signature="e#10833#10843#0" expanded="false" />
-            <element signature="e#10876#10886#0" expanded="false" />
-            <element signature="e#10924#11363#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Gui/View/MainGui.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="4364" max-vertical-offset="5170">
-          <caret line="21" column="29" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
-          <folding>
-            <element signature="e#27#36#0" expanded="true" />
-            <element signature="e#6605#6687#0" expanded="false" />
-            <element signature="e#6722#6726#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Gui/View/pnlEuropean.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.28341386" vertical-offset="66" max-vertical-offset="1826">
-          <caret line="12" column="64" selection-start-line="12" selection-start-column="64" selection-end-line="12" selection-end-column="64" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Gui/View/Engine_Vanilla.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1012">
@@ -1175,10 +1103,113 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Gui/View/Engine_European.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.36479592" vertical-offset="0" max-vertical-offset="1568">
-          <caret line="26" column="38" selection-start-line="26" selection-start-column="38" selection-end-line="26" selection-end-column="38" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1056">
+          <caret line="30" column="55" selection-start-line="30" selection-start-column="55" selection-end-line="30" selection-end-column="55" />
           <folding>
             <element signature="e#27#45#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gui/View/pnlEuropean.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2376">
+          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gui/View/pnlAmerican.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2376">
+          <caret line="10" column="33" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
+          <folding>
+            <element signature="e#22#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gui/View/pnlImplied.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1293" max-vertical-offset="2376">
+          <caret line="10" column="32" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
+          <folding>
+            <element signature="e#22#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gui/View/pnlButtons.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1327" max-vertical-offset="1914">
+          <caret line="78" column="0" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
+          <folding>
+            <element signature="e#26#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gui/View/pnlConsole.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="528" max-vertical-offset="2640">
+          <caret line="18" column="56" selection-start-line="18" selection-start-column="56" selection-end-line="18" selection-end-column="56" />
+          <folding>
+            <element signature="e#26#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PythonEngine/EuropeanGreeks.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="82" max-vertical-offset="1650">
+          <caret line="49" column="38" selection-start-line="49" selection-start-column="37" selection-end-line="49" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gui/View/MainGui.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="62.96552" vertical-offset="3102" max-vertical-offset="6402">
+          <caret line="58" column="49" selection-start-line="58" selection-start-column="49" selection-end-line="58" selection-end-column="49" />
+          <folding>
+            <element signature="e#27#36#0" expanded="true" />
+            <element signature="e#8135#8269#0" expanded="false" />
+            <element signature="e#8310#8392#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PythonEngine/EuropeanFixedStrike.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="578" max-vertical-offset="6292">
+          <caret line="192" column="30" selection-start-line="192" selection-start-column="30" selection-end-line="192" selection-end-column="30" />
+          <folding>
+            <element signature="e#21#39#0" expanded="true" />
+            <element signature="e#10767#10783#0" expanded="false" />
+            <element signature="e#10818#10830#0" expanded="false" />
+            <element signature="e#10863#10873#0" expanded="false" />
+            <element signature="e#10906#10916#0" expanded="false" />
+            <element signature="e#10954#11393#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gui/View/Engine_EuropeanLookback.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.70153064" vertical-offset="0" max-vertical-offset="3872">
+          <caret line="50" column="50" selection-start-line="50" selection-start-column="50" selection-end-line="50" selection-end-column="50" />
+          <folding>
+            <element signature="e#22#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gui/View/pnlVanilla.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.61030596" vertical-offset="1337" max-vertical-offset="2222">
+          <caret line="78" column="8" selection-start-line="78" selection-start-column="8" selection-end-line="78" selection-end-column="103" />
+          <folding>
+            <element signature="e#22#31#0" expanded="true" />
           </folding>
         </state>
       </provider>
