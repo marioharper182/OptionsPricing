@@ -1,6 +1,7 @@
 __author__ = 'HarperMain'
 
 import numpy as np
+import matplotlib.pyplot as plt
 from numpy import sqrt, exp, pi
 from matplotlib import pyplot
 
@@ -36,7 +37,17 @@ class EuropeanOption(object):
         self.SD = np.sqrt((sum_CT2 - sum_CT*sum_CT/M)*np.exp(-2*rate*expiry)/(M-1))
         self.SE = self.SD/np.sqrt(M)
         self.price = present_val
+        self.paths = assetpath
+        # self.Plot()
 
 
     def GetPrice(self):
         return [self.price, self.SD, self.SE]
+
+    def Plot(self):
+        T = range(self.paths.shape[0])
+
+        for i in range(self.paths.shape[1]):
+            plt.plot(T, self.paths[:,i])
+
+        plt.show()
