@@ -109,6 +109,9 @@ class PanelLookback ( wx.Panel ):
         self.OptionYears.Clear()
         self.Riskfree.Clear()
         self.Volatility.Clear()
+        self.Dividend.Clear()
+        self.Iterations.Clear()
+        self.ChoiceBox.Clear()
         # pass
 
     def __del__( self ):

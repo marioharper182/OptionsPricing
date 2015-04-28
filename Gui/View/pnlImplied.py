@@ -2,7 +2,7 @@ __author__ = 'Mario'
 
 import wx
 import wx.xrc
-from Engine_European import EuropeanOption
+from Engine_Implied import ImpliedVolatility
 
 ###########################################################################
 ## Class MainPanel
@@ -18,37 +18,32 @@ class PanelImplied ( wx.Panel ):
         self.StockPrice = wx.TextCtrl( self, wx.ID_ANY, wx.EmptyString, wx.DefaultPosition, wx.DefaultSize, 0 )
         txtCtrlSizer.Add( self.StockPrice, 0, wx.ALL, 5 )
 
-        self.StockPriceText = wx.StaticText(self, -1, 'Stock Price', pos = wx.Point(125, 10))
+        self.StockPriceText = wx.StaticText(self, -1, 'Spot Price', pos = wx.Point(125, 10))
 
         self.OptionPrice = wx.TextCtrl( self, wx.ID_ANY, wx.EmptyString, wx.DefaultPosition, wx.DefaultSize, 0 )
         txtCtrlSizer.Add( self.OptionPrice, 0, wx.ALL, 5 )
 
-        self.OptionStrikeText = wx.StaticText(self, -1, 'Option Strike Price', pos = wx.Point(125, 42))
+        self.OptionStrikeText = wx.StaticText(self, -1, 'Strike Price', pos = wx.Point(125, 42))
 
         self.OptionYears = wx.TextCtrl( self, wx.ID_ANY, wx.EmptyString, wx.DefaultPosition, wx.DefaultSize, 0 )
         txtCtrlSizer.Add( self.OptionYears, 0, wx.ALL, 5 )
 
-        self.OptionYearsText = wx.StaticText(self, -1, 'Years to Termination', pos = wx.Point(125, 75))
+        self.OptionYearsText = wx.StaticText(self, -1, 'Years to Expiry (divide by 252 to get days)', pos = wx.Point(125, 75))
 
         self.Riskfree = wx.TextCtrl( self, wx.ID_ANY, wx.EmptyString, wx.DefaultPosition, wx.DefaultSize, 0 )
         txtCtrlSizer.Add( self.Riskfree, 0, wx.ALL, 5 )
 
         self.RiskFreeText = wx.StaticText(self, -1, 'Risk Free Rate', pos = wx.Point(125, 110))
 
-        self.Volatility = wx.TextCtrl( self, wx.ID_ANY, wx.EmptyString, wx.DefaultPosition, wx.DefaultSize, 0 )
-        txtCtrlSizer.Add( self.Volatility, 0, wx.ALL, 5 )
+        self.dividend = wx.TextCtrl( self, wx.ID_ANY, wx.EmptyString, wx.DefaultPosition, wx.DefaultSize, 0 )
+        txtCtrlSizer.Add( self.dividend, 0, wx.ALL, 5 )
 
-        self.VolatilityText = wx.StaticText(self, -1, 'Input Volatility', pos = wx.Point(125, 142))
+        self.DividendText = wx.StaticText(self, -1, 'Yearly Dividend (Percentage)', pos = wx.Point(125, 142))
 
-        self.Fixings = wx.TextCtrl(self, wx.ID_ANY, wx.EmptyString, wx.DefaultPosition, wx.DefaultSize, 0)
-        txtCtrlSizer.Add(self.Fixings, 0, wx.ALL, 5)
+        self.price = wx.TextCtrl(self, wx.ID_ANY, wx.EmptyString, wx.DefaultPosition, wx.DefaultSize, 0)
+        txtCtrlSizer.Add(self.price, 0, wx.ALL, 5)
 
-        self.FixingsText = wx.StaticText(self, -1, 'Number of Price Fixings', pos = wx.Point(125, 174))
-
-        self.Iterations = wx.TextCtrl(self, wx.ID_ANY, wx.EmptyString, wx.DefaultPosition, wx.DefaultSize, 0)
-        txtCtrlSizer.Add(self.Iterations, 0, wx.ALL, 5)
-
-        self.IterationsText = wx.StaticText(self, -1, 'Number of Iterations', pos = wx.Point(125, 206))
+        self.PriceText = wx.StaticText(self, -1, 'Observed Price of the Option', pos = wx.Point(125, 174))
 
         Choices = ['Call', 'Put']
         self.ChoiceBox = wx.Choice(self, wx.ID_ANY, wx.DefaultPosition, wx.DefaultSize, Choices, 0)
@@ -75,19 +70,17 @@ class PanelImplied ( wx.Panel ):
         self.Layout()
 
     def OnCompute(self, event):
-        stockPrice = self.StockPrice.GetValue()
-        optionStrike = self.OptionPrice.GetValue()
-        optionYears = self.OptionYears.GetValue()
-        Riskfree = self.Riskfree.GetValue()
-        Volatility = self.Volatility.GetValue()
-        Fixings = self.Fixings.GetValue()
-        Iter = self.Iterations.GetValue()
+        spot = self.StockPrice.GetValue()
+        strike = self.OptionPrice.GetValue()
+        expiry = self.OptionYears.GetValue()
+        rate = self.Riskfree.GetValue()
+        dividend = self.dividend.GetValue()
+        price = self.price.GetValue()
         flag = 'c' if self.ChoiceBox.GetString(self.ChoiceBox.GetCurrentSelection()) == 'Call' else 'p'
-        EuroOption = EuropeanOption(stockPrice, Riskfree, Volatility, optionYears, Fixings, Iter, optionStrike, flag)
-        EuroOption.GetPrice()
+        ImpliedVol = ImpliedVolatility(spot, strike, rate, dividend, expiry, flag, price)
+        result = ImpliedVol.GetImpliedVol()
 
-        print( 'The MonteCarlo Price of the European Option is:', EuroOption.GetPrice()[0])
-        print( 'The associated standard deviation and standard errors are:', EuroOption.GetPrice()[1], EuroOption.GetPrice()[2])
+        print( 'The Black-Schoals implied volatility is:', result)
         # print(stockPrice, optionStrike, optionYears, Riskfree, Volatility)
         #
 
@@ -96,7 +89,9 @@ class PanelImplied ( wx.Panel ):
         self.OptionPrice.Clear()
         self.OptionYears.Clear()
         self.Riskfree.Clear()
-        self.Volatility.Clear()
+        self.dividend.Clear()
+        self.price.Clear()
+        self.ChoiceBox.Clear()
         # pass
 
     def __del__( self ):

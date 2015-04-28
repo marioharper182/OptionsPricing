@@ -41,8 +41,8 @@ class AppMain(wx.Frame):
                            Layer(1).
                            Name("ButtonBar").
                            CloseButton(False).
-                           MaximizeButton(True).
-                           MinimizeButton(True).
+                           MaximizeButton(False).
+                           MinimizeButton(False).
                            PinButton(False).
                            Resizable().
                            # Movable().

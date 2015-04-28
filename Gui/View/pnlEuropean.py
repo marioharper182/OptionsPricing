@@ -97,6 +97,9 @@ class PanelEuropean ( wx.Panel ):
         self.OptionYears.Clear()
         self.Riskfree.Clear()
         self.Volatility.Clear()
+        self.Fixings.Clear()
+        self.Iterations.Clear()
+        self.ChoiceBox.Clear()
         # pass
 
     def __del__( self ):
