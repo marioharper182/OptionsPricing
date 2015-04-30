@@ -38,16 +38,16 @@ class EuropeanOption(object):
         self.SE = self.SD/np.sqrt(M)
         self.price = present_val
         self.paths = assetpath
-        # self.Plot()
+        self.Plot()
 
 
     def GetPrice(self):
         return [self.price, self.SD, self.SE]
 
     def Plot(self):
-        T = range(self.paths.shape[0])
+        T = range(self.paths.shape[1])
 
-        for i in range(self.paths.shape[1]):
+        for i in range(self.paths.shape[0]):
             plt.plot(T, self.paths[:,i])
 
         plt.show()
